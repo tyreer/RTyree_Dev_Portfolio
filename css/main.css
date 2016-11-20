@@ -1,0 +1,68 @@
+body{
+  background-color: white;
+  background-image: url(../img/test_background.jpg);
+  background-attachment: fixed;
+}
+
+.introContainer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.introContainer{
+  background: #eb0a60;
+}
+
+.aboutContainer, .workSampleContainer, .contactContainer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.introBubble, .aboutBubble, .workSampleBubble {
+  background-color: #eb0a60;
+  color: white;
+  width: 50%;
+  border-radius: 100%;
+  text-align: center;
+  padding: 15% 12%;
+  box-shadow: -5px 8px 6px -6px grey;
+}
+
+.contactBubble{
+  background-color: transparent;
+  width: 80%;
+  border-radius: 100%;
+  text-align: center;
+  padding: 1% 1%;
+}
+
+.profile-photo {
+  max-width: 100%;
+  border-radius: 100%;
+}
+
+.introBubble{
+  border: 5px solid white;
+}
+
+.introBubble:hover, .contactBubble:hover {
+  transform: rotate(-10deg);
+}
+
+.aboutBubble, .workSampleBubble {
+  transform: rotate(-10deg);
+}
+
+.aboutText, .workSampleText, .contactText{
+  background-color: #eb0a60;
+  color: white;
+  text-align: center;
+}
