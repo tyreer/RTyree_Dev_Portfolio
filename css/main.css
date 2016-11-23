@@ -1,7 +1,5 @@
 body{
   background-color: white;
-  /*background-image:url(../img/test_background.jpg);
-  background-attachment: fixed;*/
 }
 
 body:before {
@@ -39,7 +37,7 @@ body:before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
+  /*background-color: rgba(255, 255, 255, 0.95);*/
 }
 
 .introBubble, .aboutBubble, .workSampleBubble {
@@ -53,7 +51,7 @@ body:before {
 }
 
 .contactBubble{
-  background-color: transparent;
+  /*background-color: transparent;*/
   width: 80%;
   border-radius: 100%;
   text-align: center;
@@ -81,4 +79,8 @@ body:before {
   background-color: #eb0a60;
   color: white;
   text-align: center;
+}
+
+.shadow {
+  box-shadow: 0 8px 10px -6px grey;
 }
