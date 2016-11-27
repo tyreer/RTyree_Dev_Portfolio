@@ -18,8 +18,13 @@ body:before {
   background-size: 100%;
 }
 
+.navContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .introContainer {
-  padding-top: 50px;
+  padding-top: 106px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: row;
@@ -30,9 +35,9 @@ body:before {
   background: #eb0a60;
 }
 
-.aboutContainer, .workSampleContainer, .contactContainer{
-  padding-top: 20px;
-  padding-bottom: 20px;
+.aboutContainer, .workSampleContainer, .contactContainer, .testimonialsContainer{
+  padding-top: 76px;
+  padding-bottom: 76px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,7 +45,7 @@ body:before {
   /*background-color: rgba(255, 255, 255, 0.95);*/
 }
 
-.introBubble, .aboutBubble, .workSampleBubble {
+.introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
   background-color: #eb0a60;
   color: white;
   width: 50%;
@@ -71,11 +76,11 @@ body:before {
   transform: rotate(-10deg);
 }
 
-.aboutBubble, .workSampleBubble {
+.aboutBubble, .workSampleBubble, .testimonialsBubble {
   transform: rotate(-10deg);
 }
 
-.aboutText, .workSampleText, .contactText{
+.aboutText, .workSampleText, .contactText, .testimonialsText {
   background-color: #eb0a60;
   color: white;
   text-align: center;
