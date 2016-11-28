@@ -18,9 +18,35 @@ body:before {
   background-size: 100%;
 }
 
+.mainNav {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+  background-color: #fff;
+}
+
 .navContainer {
+  width: 60%;
+  padding: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  margin: auto;
+}
+
+.navDisplayToggleOff {
+  display: none;
+}
+
+.navDisplayToggleOn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navContainer a, .navContainer p {
+ text-decoration: none;
+ color: #eb0a60;
 }
 
 .introContainer {
@@ -88,4 +114,18 @@ body:before {
 
 .shadow {
   box-shadow: 0 8px 10px -6px grey;
+}
+
+/* Media Queries
+================================ */
+
+@media (min-width: 500px) {
+  .navContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .displayOff {
+    display: flex;
+  }
+
 }
