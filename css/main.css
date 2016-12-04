@@ -32,6 +32,7 @@ body:before {
   flex-direction: column;
   justify-content: center;
   margin: auto;
+  align-items: center;
 }
 
 .navDisplayToggleOff {
@@ -42,11 +43,34 @@ body:before {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100vh;
+  text-align: center;
 }
 
 .navContainer a, .navContainer p {
  text-decoration: none;
  color: #eb0a60;
+}
+
+#navOptions {
+  margin-top: -50px;
+}
+
+/*Allows links within page to arrive at desired positioning */
+#about, #workSamples, #testimonials, #contact {
+  padding-top: 80px;
+  margin-top: -80px;
+}
+/*******/
+/*spacing issue*/
+.navContainer a {
+  font-size: xx-large;
+  padding: 7% 0;
+  margin: 5% 0;
+}
+
+.custom-cursor {
+  cursor: url(../img/custom_cursor.png) 16 13, auto;
 }
 
 .introContainer {
@@ -98,6 +122,7 @@ body:before {
   border: 5px solid white;
 }
 
+/*Consolidate the bottom two rules*/
 .introBubble:hover, .contactBubble:hover {
   transform: rotate(-10deg);
 }
