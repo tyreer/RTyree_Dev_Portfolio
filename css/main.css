@@ -18,11 +18,15 @@ body:before {
   background-size: 100%;
 }
 
+.disableScroll {
+  overflow: hidden;
+}
+
 .mainNav {
 	position: fixed;
 	width: 100%;
 	z-index: 100;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.98);
 }
 
 .navContainer {
@@ -56,6 +60,10 @@ body:before {
   margin-top: -50px;
 }
 
+#navBars {
+  padding: 10px;
+}
+
 /*Allows links within page to arrive at desired positioning */
 #about, #workSamples, #testimonials, #contact {
   padding-top: 80px;
@@ -70,7 +78,12 @@ body:before {
 }
 
 .custom-cursor {
-  cursor: url(../img/custom_cursor.png) 16 13, auto;
+  /*cursor: url(../img/custom_cursor.png) 16 13, auto;*/
+  cursor: crosshair;
+}
+
+.introBubble{
+  animation: headerBob 2s linear infinite;
 }
 
 .introContainer {
@@ -123,7 +136,7 @@ body:before {
 }
 
 /*Consolidate the bottom two rules*/
-.introBubble:hover, .contactBubble:hover {
+.contactBubble:hover {
   transform: rotate(-10deg);
 }
 
@@ -139,6 +152,18 @@ body:before {
 
 .shadow {
   box-shadow: 0 8px 10px -6px grey;
+}
+
+@keyframes headerBob {
+	25% {
+		transform: rotate(5deg);
+	}
+	75% {
+		transform: rotate(-5deg);
+	}
+  100% {
+		transform: rotate(0deg);
+	}
 }
 
 /* Media Queries
