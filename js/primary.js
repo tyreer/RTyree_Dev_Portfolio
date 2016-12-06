@@ -23,14 +23,14 @@ function toggleMobileMenu () {
     document.getElementById("navOptions").className = "navDisplayToggleOn";
     document.getElementById("scrollControl").className = "disableScroll";
     document.getElementById("navBars").textContent = "✕";
-    document.getElementById("navOptions").addEventListener("touchstart", touchstart, false);
-    document.getElementById("navOptions").addEventListener("touchmove", touchmove, false);
+    document.getElementById("mainNav").addEventListener("touchstart", touchstart, false);
+    document.getElementById("mainNav").addEventListener("touchmove", touchmove, false);
   } else {
     document.getElementById("navOptions").className = "navDisplayToggleOff";
     document.getElementById("scrollControl").className = "";
     document.getElementById("navBars").textContent = "☰";
-    document.getElementById("navOptions").removeEventListener("touchstart", touchstart, false);
-    document.getElementById("navOptions").removeEventListener("touchmove", touchmove, false);
+    document.getElementById("mainNav").removeEventListener("touchstart", touchstart, false);
+    document.getElementById("mainNav").removeEventListener("touchmove", touchmove, false);
 
   }
 
