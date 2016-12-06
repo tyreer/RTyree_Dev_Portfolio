@@ -24,7 +24,7 @@ function toggleMobileMenu () {
     document.getElementById("scrollControl").className = "disableScroll";
     document.getElementById("navBars").textContent = "✕";
     // document.getElementById("navOptions").className.addEventListener("touchstart", touchstart, false);
-    document.getElementById("navOptions").className.addEventListener("touchmove", touchmove, false);
+    document.getElementById("navOptions").addEventListener("touchmove", touchmove, false);
   } else {
     document.getElementById("navOptions").className = "navDisplayToggleOff";
     document.getElementById("scrollControl").className = "";
