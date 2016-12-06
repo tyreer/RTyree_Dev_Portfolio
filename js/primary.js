@@ -10,12 +10,12 @@ for (let x = 0; x<menuAnchors.length; x++){
   menuAnchors[x].addEventListener("click", toggleMobileMenu);
 }
 
-// function touchstart(e) {
-//     e.preventDefault()
-// }
+function touchstart(e) {
+    e.preventDefault();
+}
 
 function touchmove(e) {
-    e.preventDefault()
+    e.preventDefault();
 }
 
 function toggleMobileMenu () {
@@ -23,7 +23,7 @@ function toggleMobileMenu () {
     document.getElementById("navOptions").className = "navDisplayToggleOn";
     document.getElementById("scrollControl").className = "disableScroll";
     document.getElementById("navBars").textContent = "✕";
-    // document.getElementById("navOptions").className.addEventListener("touchstart", touchstart, false);
+    document.getElementById("navOptions").addEventListener("touchstart", touchstart, false);
     document.getElementById("navOptions").addEventListener("touchmove", touchmove, false);
   } else {
     document.getElementById("navOptions").className = "navDisplayToggleOff";
