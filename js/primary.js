@@ -29,6 +29,8 @@ function toggleMobileMenu () {
     document.getElementById("navOptions").className = "navDisplayToggleOff";
     document.getElementById("scrollControl").className = "";
     document.getElementById("navBars").textContent = "☰";
+    document.getElementById("navOptions").removeEventListener("touchstart", touchstart, false);
+    document.getElementById("navOptions").removeEventListener("touchmove", touchmove, false);
 
   }
 
