@@ -18,8 +18,14 @@ body:before {
   background-size: 100%;
 }
 
+/*Global: anchors color white*/
+
 .disableScroll {
   overflow: hidden;
+}
+
+.center {
+  text-align: center;
 }
 
 .mainNav {
@@ -98,15 +104,17 @@ body:before {
   background: #eb0a60;
 }
 
-.aboutContainer, .workSampleContainer, .contactContainer, .testimonialsContainer{
+.aboutContainer, .workSampleContainer, .testimonialsContainer{
   padding-top: 25px;
   /*padding-bottom: 2px;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
   /*background-color: rgba(255, 255, 255, 0.95);*/
 }
+
 
 .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
   font-family: 'Muli', sans-serif;
@@ -126,10 +134,12 @@ body:before {
   text-align: center;
   padding: 0 40px;
 }
+
 .workSampleText p:nth-child(-n+4) {
   border-bottom: 7px white dotted;
   padding-bottom: 40px;
 }
+
 .workSampleText a {
   text-decoration: none;
   color: white;
@@ -149,27 +159,20 @@ body:before {
 }
 
 .contactBubble{
-  /*background-color: transparent;*/
-  width: 80%;
-  border-radius: 100%;
   text-align: center;
-  padding: 1% 1%;
+  padding: 10% 10%;
 }
 
-.profile-photo {
-  max-width: 100%;
+.profile-image{
+  width: 55%;
+  height: 55%;
   border-radius: 100%;
+  border: 7px white solid;
 }
 
 .introBubble{
   border: 5px solid white;
 }
-
-/*Consolidate the bottom two rules*/
-.contactBubble:hover {
-  transform: rotate(-10deg);
-}
-
 .aboutBubble, .workSampleBubble, .testimonialsBubble {
   transform: rotate(-10deg);
 }
@@ -180,7 +183,6 @@ body:before {
   color: white;
   text-align: left;
   font-size: calc(20px + (24-20)*(100vw - 400px) / (800 - 400));
-  margin-top: 20px;
   padding: 25px 40px;
 }
 
@@ -188,12 +190,26 @@ body:before {
   box-shadow: 0 8px 10px -6px grey;
 }
 
-.contactTextContainer{
+.contactContainer {
+  /*background-color: rgba(255, 255, 255, 1);*/
+  background-color: #eb0a60;
+  border-top: 7px white solid;
+  border-bottom: 7px white solid;
+}
+
+.contactIconContainer {
+  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: auto;
   align-items: center;
+}
+
+.contactIconContainer a {
+  padding: 15%;
+  text-decoration: none;
+  color: white;
 }
 
 @keyframes headerBob {
