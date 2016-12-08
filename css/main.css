@@ -120,24 +120,21 @@ body:before {
   font-size: calc(16px + (20-16)*(100vw - 400px) / (800 - 400));
 }
 
-.imgWrapper {
-  width: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.workSampleImg {
-  width:  100%;
-  margin: auto;
-}
-
 .workSampleText {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 0 40px;
+}
+.workSampleText p:nth-child(-n+4) {
+  border-bottom: 7px white dotted;
+  padding-bottom: 40px;
+}
+.workSampleText a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  transform: rotate(-10deg);
 }
 
 .work-sample-content {
@@ -148,6 +145,7 @@ body:before {
   margin-top: 20px;
   font-size: calc(20px + (24-20)*(100vw - 400px) / (800 - 400));
   padding-bottom: 30px;
+  padding-top: 20px;
 }
 
 .contactBubble{
@@ -188,6 +186,14 @@ body:before {
 
 .shadow {
   box-shadow: 0 8px 10px -6px grey;
+}
+
+.contactTextContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  align-items: center;
 }
 
 @keyframes headerBob {
