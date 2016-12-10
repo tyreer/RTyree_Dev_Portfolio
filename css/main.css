@@ -1,4 +1,4 @@
-body{
+body {
   background-color: white;
 }
 
@@ -87,10 +87,28 @@ body:before {
   cursor: crosshair;
 }
 
+/*     ANNIMATIONS    */
+
 .introBubble {
   animation: headerBob 2s linear infinite;
 }
 
+.introBubble:hover {
+  animation: headerBob .5s linear infinite;
+  background: white;
+  color: #eb0a60;
+}
+
+.profile-image:hover {
+  animation: headerSpin 6s linear infinite;
+}
+
+/*    END ANNIMATIONS    */
+
+.contactIconContainer a:hover{
+  background: white;
+  color: #eb0a60;
+}
 .introContainer {
   padding-top: 106px;
   padding-bottom: 50px;
@@ -99,49 +117,62 @@ body:before {
   justify-content: center;
 }
 
-.introContainer{
+.introContainer {
   background: #eb0a60;
 }
 
-.aboutContainer, .workSampleContainer, .testimonialsContainer{
-  padding-top: 25px;
+#about h2 {
+  text-align: center;
+}
+
+.aboutContainer, .workSampleContainer, .testimonialsContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  padding-top: 25px;
 }
 
-
 .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
-  font-family: 'Muli', sans-serif;
-  background-color: #eb0a60;
-  color: white;
-  /*width: 50%;*/
-  width: 300px;
-  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 100%;
   text-align: center;
-  /*padding: 15% 12%;*/
+  font-family: 'Muli', sans-serif;
+  background-color: #eb0a60;
+  color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
   box-shadow: -5px 8px 6px -6px grey;
-  /*font-size: calc(16px + (20-16)*(100vw - 400px) / (800 - 400));*/
   font-size: large;
   border: 8px white solid;
+}
+
+.aboutBubble:hover, .workSampleBubble:hover, .testimonialsBubble:hover {
+  animation: bodyBob 1s linear infinite;
+}
+
+
+.body-padder {
+  padding: 0 50px;
 }
 
 .workSampleText {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 0 40px;
 }
 
-.workSampleText p:nth-child(-n+6) {
+/*Might revised this below*/
+.bordered-worksample {
   border-bottom: 7px white dotted;
+  padding-bottom: 40px;
+}
+
+.last-worksample {
   padding-bottom: 40px;
 }
 
@@ -149,7 +180,8 @@ body:before {
   text-decoration: none;
   color: white;
 }
-.body-padder h2 {
+
+.workSampleText h2 {
   transform: rotate(-10deg);
   padding: 30px 0;
   font-family: 'Abril Fatface', cursive;
@@ -161,39 +193,38 @@ body:before {
   color: white;
   text-align: left;
   margin-top: 20px;
-  /*font-size: calc(20px + (24-20)*(100vw - 400px) / (800 - 400));*/
   font-size: large;
   padding-bottom: 30px;
   padding-top: 20px;
 }
 
-.contactBubble{
+.contactBubble {
   text-align: center;
   padding: 10% 10%;
 }
 
-.profile-image{
+.profile-image {
   width: 55%;
   height: 55%;
   border-radius: 100%;
   border: 7px white solid;
 }
 
-.introBubble{
+.introBubble {
   border: 5px solid white;
 }
+
 .aboutBubble, .workSampleBubble, .testimonialsBubble {
   transform: rotate(-10deg);
 }
 
-.bodyText{
+.bodyText {
   font-family: 'Muli', sans-serif;
   background-color: #eb0a60;
   color: white;
   text-align: left;
-  /*font-size: calc(20px + (24-20)*(100vw - 400px) / (800 - 400));*/
   font-size: large;
-  padding: 25px 40px;
+  padding: 25px 0;
 }
 
 .shadow {
@@ -237,6 +268,27 @@ body:before {
 	}
 }
 
+@keyframes bodyBob {
+  0% {
+    transform: rotate(-10deg);
+  }
+	50% {
+		transform: rotate(10deg);
+	}
+  100% {
+		transform: rotate(-10deg);
+	}
+}
+
+@keyframes headerSpin {
+	0% {
+		transform: rotate(0deg);
+	}
+  100% {
+		transform: rotate(360deg);
+	}
+}
+
 /* Media Queries
 ================================ */
 
@@ -246,7 +298,6 @@ body:before {
     font-family: 'Muli', sans-serif;
     background-color: #eb0a60;
     color: white;
-    /*width: 50%;*/
     width: 350px;
     height: 350px;
     display: flex;
@@ -255,26 +306,23 @@ body:before {
     justify-content: center;
     border-radius: 100%;
     text-align: center;
-    /*padding: 15% 12%;*/
     box-shadow: -5px 8px 6px -6px grey;
-    /*font-size: calc(16px + (17-16)*(100vw - 400px) / (1600 - 500));*/
     font-size: large;
     border: 8px white solid;
   }
 
-  .bodyText{
+  .bodyText {
     font-family: 'Muli', sans-serif;
     background-color: #eb0a60;
     color: white;
     text-align: left;
-    /*font-size: calc(16px + (17-16)*(100vw - 400px) / (1600 - 500));*/
     font-size: x-large;
     padding: 25px 0;
     width: 100%;
     margin: auto;
   }
 
-  .body-padder{
+  .body-padder {
     width: 50%;
     margin: auto;
   }
@@ -285,27 +333,26 @@ body:before {
     color: white;
     text-align: left;
     margin-top: 20px;
-    /*font-size: calc(16px + (17-16)*(100vw - 400px) / (1600 - 500));*/
     font-size: x-large;
     padding-bottom: 30px;
     padding-top: 20px;
     width: 100%;
     margin: auto;
   }
-  .profile-image{
+
+  .profile-image {
     width: 250px;
     height: 250px;
     border-radius: 100%;
     border: 7px white solid;
   }
 
-  .contactBubble{
+  .contactBubble {
     text-align: center;
     padding: 30px 0;
   }
 
-  .body-padder{
-    padding: 0 50px;
+  .body-padder {
     border-left: 7px white solid;
     border-right: 7px white solid;
   }
