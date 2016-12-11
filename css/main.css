@@ -56,18 +56,27 @@ body:before {
   display: none;
 }
 
-.navDisplayToggleOn {
+.navContainerToggleOn {
+  height: 100vh;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
-  text-align: center;
 }
 
-.navContainer a, .navContainer p {
+.navDisplayToggleOn {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navContainerToggleOn a, .navContainerToggleOn p {
   font-family: 'Muli', sans-serif;
   text-decoration: none;
   color: #eb0a60;
+  font-size: x-large;
+  padding: 10px;
 }
 
 #navOptions {
@@ -76,18 +85,13 @@ body:before {
 
 #navBars {
   padding: 10px 50px;
+  color: #eb0a60;
 }
 
 /*Allows links within page to arrive at desired positioning */
 #about, #workSamples, #testimonials, #contact {
   padding-top: 140px;
   margin-top: -140px;
-}
-
-.navContainer a {
-  font-size: x-large;
-  padding: 20px;
-  margin: 10px 0;
 }
 
 .custom-cursor {
