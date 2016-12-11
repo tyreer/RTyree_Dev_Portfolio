@@ -35,6 +35,13 @@ body:before {
   background-color: rgba(255, 255, 255, 0.98);
 }
 
+.main-nav-opened {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
 .navContainer {
   width: 60%;
   padding: 10px;
@@ -78,7 +85,7 @@ body:before {
 }
 
 .navContainer a {
-  font-size: xx-large;
+  font-size: x-large;
   padding: 7% 0;
   margin: 5% 0;
 }
@@ -304,11 +311,31 @@ body:before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 100%;
     text-align: center;
+    border-radius: 100%;
     box-shadow: -5px 8px 6px -6px grey;
     font-size: large;
     border: 8px white solid;
+  }
+
+  .main-nav {
+    background-color: white;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 10px 6px -6px #0433FF;
+  }
+
+  #navBars {
+    font-size: xx-large;
   }
 
   .bodyText {
@@ -355,5 +382,8 @@ body:before {
   .body-padder {
     border-left: 7px white solid;
     border-right: 7px white solid;
+  }
+  .introContainer {
+    padding-top: 66px;
   }
 }
