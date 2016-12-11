@@ -87,7 +87,7 @@ body:before {
   cursor: crosshair;
 }
 
-/*     ANNIMATIONS    */
+/*     ANIMATIONS    */
 
 .introBubble {
   animation: headerBob 2s linear infinite;
@@ -103,7 +103,7 @@ body:before {
   animation: headerSpin 6s linear infinite;
 }
 
-/*    END ANNIMATIONS    */
+/*  ^ END ANIMATIONS ^   */
 
 .contactIconContainer a:hover{
   background: white;
