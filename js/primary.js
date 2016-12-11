@@ -18,9 +18,9 @@ function toggleMobileMenu () {
     document.getElementById("navBars").textContent = "✕";
   } else {
     document.getElementById("navOptions").className = "navDisplayToggleOff";
+    document.getElementById("main-nav").className = "main-nav";
     document.getElementById("scrollControl").className = "";
     document.getElementById("navBars").textContent = "☰";
-    document.getElementById("main-nav").className = "main-nav";
   }
 
 

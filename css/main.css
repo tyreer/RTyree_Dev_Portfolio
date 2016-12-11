@@ -75,7 +75,7 @@ body:before {
 }
 
 #navBars {
-  padding: 10px;
+  padding: 10px 50px;
 }
 
 /*Allows links within page to arrive at desired positioning */
@@ -86,8 +86,8 @@ body:before {
 
 .navContainer a {
   font-size: x-large;
-  padding: 7% 0;
-  margin: 5% 0;
+  padding: 20px;
+  margin: 10px 0;
 }
 
 .custom-cursor {
@@ -108,6 +108,10 @@ body:before {
 
 .profile-image:hover {
   animation: headerSpin 6s linear infinite;
+}
+
+.aboutBubble:hover, .workSampleBubble:hover, .testimonialsBubble:hover {
+  animation: bodyBob 1s linear infinite;
 }
 
 /*  ^ END ANIMATIONS ^   */
@@ -158,11 +162,6 @@ body:before {
   border: 8px white solid;
 }
 
-.aboutBubble:hover, .workSampleBubble:hover, .testimonialsBubble:hover {
-  animation: bodyBob 1s linear infinite;
-}
-
-
 .body-padder {
   padding: 0 50px;
 }
@@ -173,7 +172,7 @@ body:before {
   text-align: center;
 }
 
-/*Might revised this below*/
+/*Might revise this below*/
 .bordered-worksample {
   border-bottom: 7px white dotted;
   padding-bottom: 40px;
@@ -299,50 +298,13 @@ body:before {
 /* Media Queries
 ================================ */
 
-@media (min-width: 500px) {
-
+@media (min-width: 600px) {
   .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
-    font-family: 'Muli', sans-serif;
-    background-color: #eb0a60;
-    color: white;
     width: 350px;
     height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 100%;
-    box-shadow: -5px 8px 6px -6px grey;
     font-size: large;
-    border: 8px white solid;
   }
-
-  .main-nav {
-    background-color: white;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 10px 6px -6px #0433FF;
-  }
-
-  #navBars {
-    font-size: xx-large;
-  }
-
   .bodyText {
-    font-family: 'Muli', sans-serif;
-    background-color: #eb0a60;
-    color: white;
-    text-align: left;
     font-size: x-large;
     padding: 25px 0;
     width: 100%;
@@ -352,14 +314,11 @@ body:before {
   .body-padder {
     width: 50%;
     margin: auto;
+    border-left: 7px white solid;
+    border-right: 7px white solid;
   }
 
   .work-sample-content {
-    font-family: 'Muli', sans-serif;
-    background-color: #eb0a60;
-    color: white;
-    text-align: left;
-    margin-top: 20px;
     font-size: x-large;
     padding-bottom: 30px;
     padding-top: 20px;
@@ -379,10 +338,29 @@ body:before {
     padding: 30px 0;
   }
 
-  .body-padder {
-    border-left: 7px white solid;
-    border-right: 7px white solid;
+}
+@media (min-width: 830px) {
+
+  .main-nav {
+    background-color: white;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 10px 6px -6px #0433FF;
   }
+
+  #navBars {
+    font-size: xx-large;
+  }
+
   .introContainer {
     padding-top: 66px;
   }
