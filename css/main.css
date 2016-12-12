@@ -18,7 +18,10 @@ body:before {
   background-size: 100%;
 }
 
-/*Global: anchors color white*/
+a {
+  text-decoration: none;
+  color: white;
+}
 
 .disable-scroll {
   overflow: hidden;
@@ -26,6 +29,10 @@ body:before {
 
 .center {
   text-align: center;
+}
+
+.skills-underline {
+  text-decoration: underline;
 }
 
 .main-nav {
@@ -65,7 +72,7 @@ body:before {
 }
 
 .navDisplayToggleOn {
-  height: 75vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,7 +80,6 @@ body:before {
 
 .navContainerToggleOn a, .navContainerToggleOn p {
   font-family: 'Muli', sans-serif;
-  text-decoration: none;
   color: #eb0a60;
   font-size: x-large;
   padding: 10px;
@@ -140,6 +146,22 @@ body:before {
   text-align: center;
 }
 
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border: 4px white solid;
+  border-radius: 100%;
+}
+
+.resume:hover{
+  background: white;
+  color: #eb0a60;
+}
+
 .aboutContainer, .workSampleContainer, .testimonialsContainer {
   display: flex;
   flex-direction: column;
@@ -186,11 +208,6 @@ body:before {
   padding-bottom: 40px;
 }
 
-.workSampleText a {
-  text-decoration: none;
-  color: white;
-}
-
 .workSampleText h2 {
   transform: rotate(-10deg);
   padding: 30px 0;
@@ -224,7 +241,7 @@ body:before {
   border: 5px solid white;
 }
 
-.aboutBubble, .workSampleBubble, .testimonialsBubble {
+.aboutBubble, .workSampleBubble, .testimonialsBubble, .resume {
   transform: rotate(-10deg);
 }
 
@@ -242,7 +259,6 @@ body:before {
 }
 
 .contactContainer {
-  /*background-color: rgba(255, 255, 255, 1);*/
   background-color: #eb0a60;
   border-top: 7px white solid;
   border-bottom: 7px white solid;
@@ -260,8 +276,6 @@ body:before {
 .contactIconContainer a {
   padding: 5%;
   margin: 5%;
-  text-decoration: none;
-  color: white;
   border: 3px white solid;
   border-radius: 100%;
 }
