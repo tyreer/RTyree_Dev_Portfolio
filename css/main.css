@@ -1,6 +1,5 @@
 body {
   background-color: white;
-  overflow-x: hidden;
 }
 
 body:before {
@@ -275,8 +274,8 @@ a {
 }
 
 .contactIconContainer a {
-  padding: 25px;
-  margin: 25px;
+  padding: 5%;
+  margin: 5%;
   border: 3px white solid;
   border-radius: 100%;
 }
@@ -356,7 +355,10 @@ a {
     text-align: center;
     padding: 30px 0;
   }
-
+  .contactIconContainer a {
+    padding: 25px;
+    margin: 25px;
+  }
 }
 @media (min-width: 830px) {
 
