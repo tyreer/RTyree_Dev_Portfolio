@@ -130,6 +130,7 @@ a {
   background: white;
   color: #eb0a60;
 }
+
 .introContainer {
   padding-top: 106px;
   padding-bottom: 50px;
@@ -180,8 +181,8 @@ a {
   font-family: 'Muli', sans-serif;
   background-color: #eb0a60;
   color: white;
-  width: 300px;
-  height: 300px;
+  width: 260px;
+  height: 260px;
   border-radius: 100%;
   box-shadow: -5px 8px 6px -6px grey;
   font-size: large;
