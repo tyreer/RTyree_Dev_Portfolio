@@ -1,3 +1,5 @@
+/*     GLOBAL STYLES + UTILITY CLASSES
+================================ */
 body {
   background-color: white;
 }
@@ -23,17 +25,33 @@ a {
   color: white;
 }
 
-.disable-scroll {
-  overflow: hidden;
-}
-
 .center {
   text-align: center;
+}
+
+/*Eliminate scroll option on desktop browsers when main-nav is full screen*/
+.disable-scroll {
+  overflow: hidden;
 }
 
 .skills-underline {
   text-decoration: underline;
 }
+
+/*Allows links within page to arrive at desired positioning */
+#about, #workSamples, #testimonials, #contact {
+  padding-top: 140px;
+  margin-top: -140px;
+}
+
+.custom-cursor {
+  cursor: crosshair;
+}
+
+/*    ^  END GLOBAL STYLES + UTILITY CLASSES  ^    */
+
+/*    NAV
+================================ */
 
 .main-nav {
 	position: fixed;
@@ -94,17 +112,10 @@ a {
   color: #eb0a60;
 }
 
-/*Allows links within page to arrive at desired positioning */
-#about, #workSamples, #testimonials, #contact {
-  padding-top: 140px;
-  margin-top: -140px;
-}
+/*  ^  END  NAV  ^   */
 
-.custom-cursor {
-  cursor: crosshair;
-}
-
-/*     ANIMATIONS    */
+/*     ANIMATIONS
+================================ */
 
 .introBubble {
   animation: headerBob 2s linear infinite;
@@ -124,11 +135,60 @@ a {
   animation: bodyBob 1s linear infinite;
 }
 
+@keyframes headerBob {
+	25% {
+		transform: rotate(5deg);
+	}
+	75% {
+		transform: rotate(-5deg);
+	}
+  100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes bodyBob {
+  0% {
+    transform: rotate(-10deg);
+  }
+	50% {
+		transform: rotate(10deg);
+	}
+  100% {
+		transform: rotate(-10deg);
+	}
+}
+
+@keyframes headerSpin {
+	0% {
+		transform: rotate(0deg);
+	}
+  100% {
+		transform: rotate(360deg);
+	}
+}
+
 /*  ^ END ANIMATIONS ^   */
 
-.contactIconContainer a:hover{
-  background: white;
-  color: #eb0a60;
+.introBubble {
+  border: 5px solid white;
+}
+
+.aboutBubble, .workSampleBubble, .testimonialsBubble, .resume {
+  transform: rotate(-10deg);
+}
+
+.bodyText {
+  font-family: 'Muli', sans-serif;
+  background-color: #eb0a60;
+  color: white;
+  text-align: left;
+  font-size: large;
+  padding: 25px 0;
+}
+
+.shadow {
+  box-shadow: 0 8px 10px -6px grey;
 }
 
 .introContainer {
@@ -199,7 +259,6 @@ a {
   text-align: center;
 }
 
-/*Might revise this below*/
 .bordered-worksample {
   border-bottom: 7px white dotted;
   padding-bottom: 40px;
@@ -238,27 +297,6 @@ a {
   border: 7px white solid;
 }
 
-.introBubble {
-  border: 5px solid white;
-}
-
-.aboutBubble, .workSampleBubble, .testimonialsBubble, .resume {
-  transform: rotate(-10deg);
-}
-
-.bodyText {
-  font-family: 'Muli', sans-serif;
-  background-color: #eb0a60;
-  color: white;
-  text-align: left;
-  font-size: large;
-  padding: 25px 0;
-}
-
-.shadow {
-  box-shadow: 0 8px 10px -6px grey;
-}
-
 .contactContainer {
   background-color: #eb0a60;
   border-top: 7px white solid;
@@ -281,40 +319,12 @@ a {
   border-radius: 100%;
 }
 
-@keyframes headerBob {
-	25% {
-		transform: rotate(5deg);
-	}
-	75% {
-		transform: rotate(-5deg);
-	}
-  100% {
-		transform: rotate(0deg);
-	}
+.contactIconContainer a:hover{
+  background: white;
+  color: #eb0a60;
 }
 
-@keyframes bodyBob {
-  0% {
-    transform: rotate(-10deg);
-  }
-	50% {
-		transform: rotate(10deg);
-	}
-  100% {
-		transform: rotate(-10deg);
-	}
-}
-
-@keyframes headerSpin {
-	0% {
-		transform: rotate(0deg);
-	}
-  100% {
-		transform: rotate(360deg);
-	}
-}
-
-/* Media Queries
+/* MEDIA QUERIES
 ================================ */
 
 @media (min-width: 600px) {
@@ -361,6 +371,7 @@ a {
     margin: 25px;
   }
 }
+
 @media (min-width: 830px) {
 
   .main-nav {
