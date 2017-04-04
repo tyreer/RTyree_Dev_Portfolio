@@ -223,6 +223,12 @@ a {
   color: #eb0a60;
 }
 
+.workSampleHover:hover{
+  width:50%;
+  background: white;
+  color: #eb0a60;
+}
+
 .aboutContainer, .workSampleContainer, .testimonialsContainer {
   display: flex;
   flex-direction: column;
