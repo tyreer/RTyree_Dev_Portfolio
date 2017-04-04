@@ -218,15 +218,13 @@ a {
   border-radius: 100%;
 }
 
-.resume:hover{
+.resume:hover {
   background: white;
   color: #eb0a60;
 }
 
-.workSampleHover:hover{
-  width:50%;
-  background: white;
-  color: #eb0a60;
+.workSampleHover:hover h2 {
+  text-decoration: underline;
 }
 
 .aboutContainer, .workSampleContainer, .testimonialsContainer {
