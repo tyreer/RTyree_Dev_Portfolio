@@ -39,7 +39,7 @@ a {
 }
 
 /*Allows links within page to arrive at desired positioning */
-#about, #workSamples, #testimonials, #contact {
+#about, #workSamples, #testimonials, #contact, #aboutJump {
   padding-top: 140px;
   margin-top: -140px;
 }
