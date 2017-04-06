@@ -2,11 +2,8 @@
 
 document.getElementById("navBars").addEventListener("click", toggleMobileMenu);
 
-const menuAnchors = document.getElementsByClassName("menuAnchor");
-
-for (let x = 0; x<menuAnchors.length; x++){
-  menuAnchors[x].addEventListener("click", toggleMobileMenu);
-}
+[...document.getElementsByClassName("menuAnchor")]
+.forEach(element => element.addEventListener("click", toggleMobileMenu));
 
 function toggleMobileMenu() {
   if (document.getElementById("navOptions").className === "navDisplayToggleOff"){
@@ -22,4 +19,4 @@ function toggleMobileMenu() {
     document.getElementById("scrollControl").className = "";
     document.getElementById("navBars").textContent = "☰";
   }
-}
+};
