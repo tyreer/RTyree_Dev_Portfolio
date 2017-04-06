@@ -2,8 +2,8 @@
 
 document.getElementById("navBars").addEventListener("click", toggleMobileMenu);
 
-[...document.getElementsByClassName("menuAnchor")]
-.forEach(element => element.addEventListener("click", toggleMobileMenu));
+[].forEach.call(document.getElementsByClassName("menuAnchor"),
+element => element.addEventListener("click", toggleMobileMenu));
 
 function toggleMobileMenu() {
   if (document.getElementById("navOptions").className === "navDisplayToggleOff"){
