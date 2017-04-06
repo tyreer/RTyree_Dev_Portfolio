@@ -6,7 +6,7 @@ document.getElementById("navBars").addEventListener("click", toggleMobileMenu);
 element => element.addEventListener("click", toggleMobileMenu));
 
 function toggleMobileMenu() {
-  if (document.getElementById("navOptions").className === "navDisplayToggleOff"){
+  if (document.getElementById("navOptions").className === "navDisplayToggleOff") {
     document.getElementById("main-nav").className = "main-nav-opened";
     document.getElementById("navOptions").className = "navDisplayToggleOn";
     document.getElementById("navContainer").className = "navContainerToggleOn";
