@@ -191,7 +191,7 @@ a {
   box-shadow: 0 8px 10px -6px grey;
 }
 
-.introContainer {
+.introTitleContainer {
   padding-top: 106px;
   padding-bottom: 50px;
   display: flex;
@@ -199,7 +199,7 @@ a {
   justify-content: center;
 }
 
-.introContainer {
+.introTitleContainer {
   background: #eb0a60;
 }
 
@@ -227,7 +227,7 @@ a {
   text-decoration: underline;
 }
 
-.aboutContainer, .workSampleContainer, .testimonialsContainer {
+.aboutTitleContainer, .workSampleTitleContainer, .testimonialsTitleContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -301,7 +301,7 @@ a {
   border: 7px white solid;
 }
 
-.contactContainer {
+.contactTitleContainer {
   background-color: #eb0a60;
   border-top: 7px white solid;
   border-bottom: 7px white solid;
@@ -399,7 +399,7 @@ a {
     font-size: xx-large;
   }
 
-  .introContainer {
+  .introTitleContainer {
     padding-top: 66px;
   }
 }
