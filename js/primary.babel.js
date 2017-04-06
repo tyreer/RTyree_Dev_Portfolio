@@ -1,7 +1,5 @@
 'use strict';
 
-require("babel-core").transform("code", options);
-
 document.getElementById("navBars").addEventListener("click", toggleMobileMenu);
 
 [].forEach.call(document.getElementsByClassName("menuAnchor"), function (element) {
