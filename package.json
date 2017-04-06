@@ -1,0 +1,23 @@
+{
+  "name": "robert-tyree-portfolio",
+  "version": "1.0.0",
+  "description": "Frontend web developer portfolio for Robert Tyree",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tyreer/RTyree_Dev_Portfolio.git"
+  },
+  "author": "Robert Tyree",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tyreer/RTyree_Dev_Portfolio/issues"
+  },
+  "homepage": "https://github.com/tyreer/RTyree_Dev_Portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat-css": "^2.3.0"
+  }
+}
