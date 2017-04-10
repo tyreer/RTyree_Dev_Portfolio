@@ -99,7 +99,7 @@ a {
 .navContainerToggleOn a, .navContainerToggleOn p {
   font-family: 'Muli', sans-serif;
   color: #eb0a60;
-  font-size: x-large;
+  font-size: 24px;
   padding: 10px;
 }
 
@@ -183,7 +183,7 @@ a {
   background-color: #eb0a60;
   color: white;
   text-align: left;
-  font-size: large;
+  font-size: 18px;
   padding: 25px 0;
 }
 
@@ -249,7 +249,7 @@ a {
   height: 260px;
   border-radius: 100%;
   box-shadow: -5px 8px 6px -6px grey;
-  font-size: large;
+  font-size: 18px;
   border: 8px white solid;
 }
 
@@ -284,7 +284,7 @@ a {
   color: white;
   text-align: left;
   margin-top: 20px;
-  font-size: large;
+  font-size: 18px;
   padding-bottom: 30px;
   padding-top: 20px;
 }
@@ -335,11 +335,11 @@ a {
   .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
     width: 350px;
     height: 350px;
-    font-size: large;
+    font-size: 18px;
   }
 
   .bodyText {
-    font-size: x-large;
+    font-size: 24px;
     padding: 25px 0;
     width: 100%;
     margin: auto;
@@ -353,7 +353,7 @@ a {
   }
 
   .work-sample-content {
-    font-size: x-large;
+    font-size: 24px;
     padding-bottom: 30px;
     padding-top: 20px;
     width: 100%;
@@ -396,7 +396,7 @@ a {
   }
 
   #navBars {
-    font-size: xx-large;
+    font-size: 24px;
   }
 
   .introTitleContainer {
