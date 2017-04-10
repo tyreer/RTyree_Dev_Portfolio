@@ -412,4 +412,7 @@ template {
 [hidden] {
   display: none; }
 
+p {
+  font-size: 1.125em; }
+
 /*# sourceMappingURL=application.css.map */
