@@ -21,19 +21,19 @@ body:before {
 }
 
 h1 {
-  font-size: 2.26em;
+  font-size: 1.8em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 h3 {
-  font-size: 1.6em;
+  font-size: 1.3em;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
 a {
@@ -124,7 +124,7 @@ a {
 }
 
 #navBars {
-  padding: 5px 50px;
+  padding: 0px 50px;
   color: #eb0a60;
 }
 
@@ -208,7 +208,7 @@ a {
 }
 
 .introTitleContainer {
-  padding-top: 106px;
+  padding-top: 130px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: row;
@@ -217,6 +217,10 @@ a {
 
 .introTitleContainer {
   background: #eb0a60;
+}
+
+.introBubble p {
+  font-size: 1em;
 }
 
 #about h1 {
@@ -267,10 +271,6 @@ a {
   box-shadow: -5px 8px 6px -6px grey;
   /*font-size: 18px;*/
   border: 8px white solid;
-}
-
-.introBubble p {
-  font-size: 1.1em;
 }
 
 .body-padder {
@@ -334,7 +334,7 @@ a {
   justify-content: space-around;
   margin: auto;
   align-items: center;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 .contactIconContainer a {
@@ -353,6 +353,31 @@ a {
 ================================ */
 
 @media (min-width: 600px) {
+
+  h1 {
+    font-size: 2.26em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .introBubble p {
+    font-size: 1.15em;
+  }
+
+  .contactIconContainer {
+    font-size: 1.6em;
+  }
+
   .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
     width: 350px;
     height: 350px;
