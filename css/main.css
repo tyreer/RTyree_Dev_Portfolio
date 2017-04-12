@@ -334,7 +334,7 @@ a {
   justify-content: space-around;
   margin: auto;
   align-items: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .contactIconContainer a {
@@ -354,33 +354,13 @@ a {
 
 @media (min-width: 600px) {
 
-  h1 {
-    font-size: 2.26em;
-  }
-
-  h2 {
-    font-size: 2em;
-  }
-
-  h3 {
-    font-size: 1.6em;
-  }
-
-  p {
-    font-size: 1.5em;
-  }
-
-  .introBubble p {
-    font-size: 1.15em;
-  }
-
-  .contactIconContainer {
-    font-size: 1.6em;
+  .navContainerToggleOn a, .navContainerToggleOn p {
+    padding: 0;
   }
 
   .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
   }
 
   .bodyText {
@@ -421,6 +401,34 @@ a {
 }
 
 @media (min-width: 830px) {
+  h1 {
+    font-size: 2.26em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
+    width: 350px;
+    height: 350px;
+  }
+
+  .introBubble p {
+    font-size: 1.15em;
+  }
+
+  .contactIconContainer {
+    font-size: 1.6em;
+  }
 
   .main-nav {
     background-color: white;
@@ -436,6 +444,10 @@ a {
     justify-content: center;
     text-align: center;
     box-shadow: 0 10px 6px -6px #0433FF;
+  }
+
+  .navContainerToggleOn a, .navContainerToggleOn p {
+    padding: 10px;
   }
 
   #navBars {
