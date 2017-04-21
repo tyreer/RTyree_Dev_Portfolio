@@ -1,7 +1,8 @@
 // —————————————————————————————————————————————————————————————————————
-// Global Imports
+// Component extends
 // —————————————————————————————————————————————————————————————————————
 
-@import "base/index";
-@import "layout/index";
-@import "components/index";
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}

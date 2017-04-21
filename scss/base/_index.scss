@@ -1,7 +1,8 @@
 // —————————————————————————————————————————————————————————————————————
-// Global Imports
+// Base imports
 // —————————————————————————————————————————————————————————————————————
 
-@import "base/index";
-@import "layout/index";
-@import "components/index";
+@import 'normalize';
+@import 'variables';
+@import 'base';
+@import 'animations';

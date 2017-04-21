@@ -1,7 +1,7 @@
 // —————————————————————————————————————————————————————————————————————
-// Global Imports
+// Component imports
 // —————————————————————————————————————————————————————————————————————
 
-@import "base/index";
-@import "layout/index";
-@import "components/index";
+@import "extends";
+@import "nav";
+@import "components";

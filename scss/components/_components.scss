@@ -1,0 +1,185 @@
+.introBubble {
+  border: 5px solid white;
+  box-shadow: $box-shadow;
+}
+
+.aboutBubble, .workSampleBubble, .testimonialsBubble, .resume {
+  transform: rotate(-10deg);
+}
+
+.bodyText {
+  font-family: $font-family--sans-serif;
+  background-color: $hot-pink;
+  color: $white;
+  text-align: left;
+  padding: 25px 0;
+  box-shadow: $box-shadow;
+  @media #{$medium-breakpoint} {
+    padding: 25px 0;
+    width: 100%;
+    margin: auto;
+  };
+}
+
+
+.introTitleContainer {
+  padding-top: 130px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: $hot-pink;
+  box-shadow: $box-shadow;
+  @media #{$large-breakpoint} {
+    padding-top: 66px;
+  }
+}
+
+
+.introBubble p {
+  font-size: 1em;
+  @media #{$medium-breakpoint} {
+    font-size: 1.15em;
+  }
+}
+
+#about h1 {
+  text-align: center;
+}
+
+.resume {
+  @extend %flex-column;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border: 4px white solid;
+  border-radius: 100%;
+}
+
+.resume:hover {
+  background: white;
+  color: $hot-pink;
+}
+
+.workSampleHover:hover h2 {
+  text-decoration: underline;
+}
+
+.aboutTitleContainer, .workSampleTitleContainer, .testimonialsTitleContainer {
+  @extend %flex-column;
+  // justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 25px;
+}
+
+.introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
+  @extend %flex-column;
+  // align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: $font-family--sans-serif;
+  background-color: $hot-pink;
+  color: $white;
+  width: 260px;
+  height: 260px;
+  border-radius: 100%;
+  box-shadow: -5px 8px 6px -6px grey;
+  border: 8px white solid;
+  @media #{$medium-breakpoint} {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+.workSampleText {
+  @extend %flex-column;
+  text-align: center;
+}
+
+.bordered-worksample {
+  border-bottom: 7px white dotted;
+  padding-bottom: 40px;
+}
+
+.last-worksample {
+  padding-bottom: 40px;
+}
+
+.workSampleText h1 {
+  transform: rotate(-10deg);
+  padding: 30px 0;
+  font-family: $font-family--fantasy;
+}
+
+.work-sample-content {
+  font-family: $font-family--sans-serif;
+  background-color: $hot-pink;
+  color: $white;
+  text-align: left;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  box-shadow: $box-shadow;
+  @media #{$medium-breakpoint} {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.contactBubble {
+  text-align: center;
+  padding: 10% 10%;
+  @media #{$medium-breakpoint} {
+    padding: 30px 0;
+  }
+}
+
+.profile-image {
+  width: 55%;
+  height: 55%;
+  border-radius: 100%;
+  border: 7px white solid;
+  @media #{$medium-breakpoint} {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.contactTitleContainer {
+  background-color: $hot-pink;
+  border-top: 7px white solid;
+  border-bottom: 7px white solid;
+}
+
+.contactIconContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  align-items: center;
+  font-size: 1.4em;
+  @media #{$medium-breakpoint} {
+    font-size: 1.6em;
+  }
+}
+
+.contactIconContainer a {
+  padding: 5%;
+  margin: 5%;
+  border: 3px white solid;
+  border-radius: 100%;
+  @media #{$medium-breakpoint} {
+    padding: 25px;
+    margin: 25px;
+  }
+}
+
+.contactIconContainer a:hover{
+  background: white;
+  color: $hot-pink;
+}

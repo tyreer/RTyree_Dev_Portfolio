@@ -1,0 +1,15 @@
+.body-padder {
+  padding: 0 50px;
+  @media #{$medium-breakpoint} {
+    width: 50%;
+    margin: auto;
+    border-left: 7px white solid;
+    border-right: 7px white solid;
+  }
+}
+
+/*Allows links within page to arrive at desired positioning */
+#about, #workSamples, #testimonials, #contact, #aboutJump, #workJump, #testimonialJump {
+  padding-top: 140px;
+  margin-top: -140px;
+}

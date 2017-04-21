@@ -1,0 +1,85 @@
+/// —————————————————————————————————————————————————————————————————————
+// Base styles
+// —————————————————————————————————————————————————————————————————————
+
+body {
+  background-color: white;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background-image: url(../img/test_background_2.png);
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+
+h1 {
+  font-size: 1.8em;
+  @media #{$medium-breakpoint} {
+    font-size: 2.26em;
+  }
+}
+
+h2 {
+  font-size: 1.5em;
+  @media #{$medium-breakpoint} {
+    font-size: 2em;
+  }
+}
+
+h3 {
+  font-size: 1.3em;
+  @media #{$medium-breakpoint} {
+    font-size: 1.6em;
+  }
+}
+
+p {
+  font-size: 1.1em;
+  @media #{$medium-breakpoint} {
+    font-size: 1.5em;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/// —————————————————————————————————————————————————————————————————————
+// Utility classes
+/// —————————————————————————————————————————————————————————————————————
+
+.center {
+  text-align: center;
+}
+
+// Eliminate scroll option on desktop browsers when main-nav is full screen
+.disable-scroll {
+  overflow: hidden;
+}
+
+#navBars, a {
+  cursor: crosshair;
+}
+
+// Screen reader text
+.screen-reader-text {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
