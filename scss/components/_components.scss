@@ -21,7 +21,6 @@
   };
 }
 
-
 .introTitleContainer {
   padding-top: 130px;
   padding-bottom: 50px;
@@ -61,10 +60,6 @@
   color: $hot-pink;
 }
 
-.workSampleHover:hover h2 {
-  text-decoration: underline;
-}
-
 .aboutTitleContainer, .workSampleTitleContainer, .testimonialsTitleContainer {
   @extend %flex-column;
   // justify-content: center;
@@ -95,6 +90,10 @@
 .workSampleText {
   @extend %flex-column;
   text-align: center;
+}
+
+.workSampleHover:hover h2 {
+  text-decoration: underline;
 }
 
 .bordered-worksample {
@@ -131,7 +130,7 @@
 
 .contactBubble {
   text-align: center;
-  padding: 10% 10%;
+  padding: 10%;
   @media #{$medium-breakpoint} {
     padding: 30px 0;
   }
@@ -157,10 +156,8 @@
 .contactIconContainer {
   width: 50%;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   margin: auto;
-  align-items: center;
   font-size: 1.4em;
   @media #{$medium-breakpoint} {
     font-size: 1.6em;

@@ -638,9 +638,6 @@ a {
   background: white;
   color: #ee005e; }
 
-.workSampleHover:hover h2 {
-  text-decoration: underline; }
-
 .aboutTitleContainer, .workSampleTitleContainer, .testimonialsTitleContainer {
   align-items: center;
   margin-bottom: 20px;
@@ -664,6 +661,9 @@ a {
 
 .workSampleText {
   text-align: center; }
+
+.workSampleHover:hover h2 {
+  text-decoration: underline; }
 
 .bordered-worksample {
   border-bottom: 7px white dotted;
@@ -695,7 +695,7 @@ a {
 
 .contactBubble {
   text-align: center;
-  padding: 10% 10%; }
+  padding: 10%; }
   @media (min-width: 600px) {
     .contactBubble {
       padding: 30px 0; } }
@@ -718,10 +718,8 @@ a {
 .contactIconContainer {
   width: 50%;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   margin: auto;
-  align-items: center;
   font-size: 1.4em; }
   @media (min-width: 600px) {
     .contactIconContainer {
