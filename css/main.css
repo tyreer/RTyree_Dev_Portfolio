@@ -20,6 +20,22 @@ body:before {
   background-size: 100%;
 }
 
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -99,7 +115,7 @@ a {
 .navContainerToggleOn a, .navContainerToggleOn p {
   font-family: 'Muli', sans-serif;
   color: #eb0a60;
-  font-size: x-large;
+  /*font-size: 24px;*/
   padding: 10px;
 }
 
@@ -108,7 +124,7 @@ a {
 }
 
 #navBars {
-  padding: 5px 50px;
+  padding: 0px 50px;
   color: #eb0a60;
 }
 
@@ -183,7 +199,7 @@ a {
   background-color: #eb0a60;
   color: white;
   text-align: left;
-  font-size: large;
+  /*font-size: 18px;*/
   padding: 25px 0;
 }
 
@@ -192,7 +208,7 @@ a {
 }
 
 .introTitleContainer {
-  padding-top: 106px;
+  padding-top: 130px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: row;
@@ -203,7 +219,11 @@ a {
   background: #eb0a60;
 }
 
-#about h2 {
+.introBubble p {
+  font-size: 1em;
+}
+
+#about h1 {
   text-align: center;
 }
 
@@ -249,7 +269,7 @@ a {
   height: 260px;
   border-radius: 100%;
   box-shadow: -5px 8px 6px -6px grey;
-  font-size: large;
+  /*font-size: 18px;*/
   border: 8px white solid;
 }
 
@@ -272,7 +292,7 @@ a {
   padding-bottom: 40px;
 }
 
-.workSampleText h2 {
+.workSampleText h1 {
   transform: rotate(-10deg);
   padding: 30px 0;
   font-family: 'Abril Fatface', cursive;
@@ -284,7 +304,7 @@ a {
   color: white;
   text-align: left;
   margin-top: 20px;
-  font-size: large;
+  /*font-size: 18px;*/
   padding-bottom: 30px;
   padding-top: 20px;
 }
@@ -314,6 +334,7 @@ a {
   justify-content: space-around;
   margin: auto;
   align-items: center;
+  font-size: 1.2em;
 }
 
 .contactIconContainer a {
@@ -332,14 +353,17 @@ a {
 ================================ */
 
 @media (min-width: 600px) {
+
+  .navContainerToggleOn a, .navContainerToggleOn p {
+    padding: 0;
+  }
+
   .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
-    width: 350px;
-    height: 350px;
-    font-size: large;
+    width: 300px;
+    height: 300px;
   }
 
   .bodyText {
-    font-size: x-large;
     padding: 25px 0;
     width: 100%;
     margin: auto;
@@ -353,7 +377,6 @@ a {
   }
 
   .work-sample-content {
-    font-size: x-large;
     padding-bottom: 30px;
     padding-top: 20px;
     width: 100%;
@@ -378,6 +401,34 @@ a {
 }
 
 @media (min-width: 830px) {
+  h1 {
+    font-size: 2.26em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
+    width: 350px;
+    height: 350px;
+  }
+
+  .introBubble p {
+    font-size: 1.15em;
+  }
+
+  .contactIconContainer {
+    font-size: 1.6em;
+  }
 
   .main-nav {
     background-color: white;
@@ -395,8 +446,12 @@ a {
     box-shadow: 0 10px 6px -6px #0433FF;
   }
 
+  .navContainerToggleOn a, .navContainerToggleOn p {
+    padding: 10px;
+  }
+
   #navBars {
-    font-size: xx-large;
+    /*font-size: 24px;*/
   }
 
   .introTitleContainer {

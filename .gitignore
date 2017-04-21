@@ -5,5 +5,6 @@ npm-debug.log
 # Local development
 *.env
 *.dev
+.sass-cache
 .DS_Store
 .sass-cache
