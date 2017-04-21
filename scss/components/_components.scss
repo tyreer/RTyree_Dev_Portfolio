@@ -3,6 +3,7 @@
   transform: rotate(-10deg);
 }
 
+// Container for all pink background content areas
 .body-text-container {
   font-family: $font-family--sans-serif;
   background-color: $hot-pink;
@@ -17,7 +18,7 @@
   };
 }
 
-#about h2 {
+.about__h2--headline {
   text-align: center;
 }
 
@@ -102,6 +103,10 @@
     width: 100%;
     margin: auto;
   }
+}
+
+.body-padder--bottom-margin {
+  margin-bottom: 45px;
 }
 
 .contactBubble {

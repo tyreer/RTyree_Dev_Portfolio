@@ -623,7 +623,7 @@ a {
       width: 100%;
       margin: auto; } }
 
-#about h2 {
+.about__h2--headline {
   text-align: center; }
 
 .resume {
@@ -692,6 +692,9 @@ a {
       padding-top: 20px;
       width: 100%;
       margin: auto; } }
+
+.body-padder--bottom-margin {
+  margin-bottom: 45px; }
 
 .contactBubble {
   text-align: center;
