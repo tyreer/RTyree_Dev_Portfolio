@@ -1,0 +1,24 @@
+.introBubble {
+  border: 5px solid white;
+  box-shadow: $box-shadow;
+}
+
+.introTitleContainer {
+  padding-top: 130px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: $hot-pink;
+  box-shadow: $box-shadow;
+  @media #{$large-breakpoint} {
+    padding-top: 66px;
+  }
+}
+
+.introBubble p {
+  font-size: 1em;
+  @media #{$medium-breakpoint} {
+    font-size: 1.15em;
+  }
+}

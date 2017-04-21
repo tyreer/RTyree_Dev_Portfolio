@@ -589,22 +589,6 @@ a {
   border: 5px solid white;
   box-shadow: 0 8px 10px -6px grey; }
 
-.aboutBubble, .workSampleBubble, .testimonialsBubble, .resume {
-  transform: rotate(-10deg); }
-
-.bodyText {
-  font-family: "Muli", Helvetica, Arial, sans-serif;
-  background-color: #ee005e;
-  color: white;
-  text-align: left;
-  padding: 25px 0;
-  box-shadow: 0 8px 10px -6px grey; }
-  @media (min-width: 600px) {
-    .bodyText {
-      padding: 25px 0;
-      width: 100%;
-      margin: auto; } }
-
 .introTitleContainer {
   padding-top: 130px;
   padding-bottom: 50px;
@@ -622,6 +606,22 @@ a {
   @media (min-width: 600px) {
     .introBubble p {
       font-size: 1.15em; } }
+
+.aboutBubble, .workSampleBubble, .testimonialsBubble, .resume {
+  transform: rotate(-10deg); }
+
+.body-text-container {
+  font-family: "Muli", Helvetica, Arial, sans-serif;
+  background-color: #ee005e;
+  color: white;
+  text-align: left;
+  padding: 25px 0;
+  box-shadow: 0 8px 10px -6px grey; }
+  @media (min-width: 600px) {
+    .body-text-container {
+      padding: 25px 0;
+      width: 100%;
+      margin: auto; } }
 
 #about h2 {
   text-align: center; }
