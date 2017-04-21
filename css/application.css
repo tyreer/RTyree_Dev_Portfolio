@@ -428,15 +428,21 @@ h1 {
       font-size: 2.26em; } }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: 1.8em; }
   @media (min-width: 600px) {
     h2 {
-      font-size: 2em; } }
+      font-size: 2.26em; } }
 
 h3 {
-  font-size: 1.3em; }
+  font-size: 1.5em; }
   @media (min-width: 600px) {
     h3 {
+      font-size: 2em; } }
+
+h4 {
+  font-size: 1.3em; }
+  @media (min-width: 600px) {
+    h4 {
       font-size: 1.6em; } }
 
 p {
@@ -623,7 +629,7 @@ a {
     .introBubble p {
       font-size: 1.15em; } }
 
-#about h1 {
+#about h2 {
   text-align: center; }
 
 .resume {
@@ -672,7 +678,7 @@ a {
 .last-worksample {
   padding-bottom: 40px; }
 
-.workSampleText h1 {
+.workSampleText h2 {
   transform: rotate(-10deg);
   padding: 30px 0;
   font-family: "Abril Fatface", fantasy; }
