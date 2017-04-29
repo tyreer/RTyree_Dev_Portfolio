@@ -515,8 +515,8 @@ a {
 
 /*Allows links within page to arrive at desired positioning */
 #about, #workSamples, #testimonials, #contact, #aboutJump, #workJump, #testimonialJump {
-  padding-top: 140px;
-  margin-top: -140px; }
+  padding-top: 70px;
+  margin-top: -70px; }
 
 .resume, .aboutTitleContainer, .workSampleTitleContainer, .testimonialsTitleContainer, .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble, .workSampleText {
   display: flex;
