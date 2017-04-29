@@ -582,8 +582,12 @@ a {
   margin-top: -50px; }
 
 #navBars {
-  padding: 0px 50px;
+  padding: 30px;
+  margin: -15px 0px;
   color: #ee005e; }
+  @media (min-width: 830px) {
+    #navBars {
+      padding: 25px; } }
 
 .introBubble {
   border: 5px solid white;

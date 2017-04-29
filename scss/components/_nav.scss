@@ -70,6 +70,11 @@
 }
 
 #navBars {
-  padding: 0px 50px;
+  padding: 30px;
+	margin: -15px 0px;
   color: $hot-pink;
+	@media #{$large-breakpoint}{
+		padding: 25px;
+	}
+
 }
