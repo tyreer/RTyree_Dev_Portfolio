@@ -607,6 +607,21 @@ a {
     .introBubble p {
       font-size: 1.15em; } }
 
+.about__h2--headline {
+  text-align: center; }
+
+.resume {
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 100%;
+  border: 4px white solid; }
+
+.resume:hover {
+  background: white;
+  color: #ee005e; }
+
 .aboutBubble, .workSampleBubble, .testimonialsBubble, .resume {
   transform: rotate(-10deg); }
 
@@ -623,21 +638,6 @@ a {
       width: 100%;
       margin: auto; } }
 
-.about__h2--headline {
-  text-align: center; }
-
-.resume {
-  justify-content: center;
-  width: 120px;
-  height: 120px;
-  margin: auto;
-  border: 4px white solid;
-  border-radius: 100%; }
-
-.resume:hover {
-  background: white;
-  color: #ee005e; }
-
 .aboutTitleContainer, .workSampleTitleContainer, .testimonialsTitleContainer {
   align-items: center;
   margin-bottom: 20px;
@@ -652,8 +652,8 @@ a {
   width: 260px;
   height: 260px;
   border-radius: 100%;
-  box-shadow: -5px 8px 6px -6px grey;
-  border: 8px white solid; }
+  border: 8px white solid;
+  box-shadow: -5px 8px 6px -6px grey; }
   @media (min-width: 600px) {
     .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
       width: 350px;
@@ -731,8 +731,8 @@ a {
 .contactIconContainer a {
   padding: 5%;
   margin: 5%;
-  border: 3px white solid;
-  border-radius: 100%; }
+  border-radius: 100%;
+  border: 3px white solid; }
   @media (min-width: 600px) {
     .contactIconContainer a {
       padding: 25px;

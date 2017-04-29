@@ -1,0 +1,17 @@
+.about__h2--headline {
+  text-align: center;
+}
+
+.resume {
+  @extend %flex-column;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  @include circle-border(4px);
+}
+
+.resume:hover {
+  background: white;
+  color: $hot-pink;
+}
