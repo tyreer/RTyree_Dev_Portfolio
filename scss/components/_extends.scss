@@ -7,6 +7,16 @@
   flex-direction: column;
 }
 
+%common-font-color {
+  font-family: $font-family--sans-serif;
+  background-color: $hot-pink;
+  color: $white;
+}
+
+// —————————————————————————————————————————————————————————————————————
+// Component mixins
+// —————————————————————————————————————————————————————————————————————
+
 @mixin circle-border($size) {
   border-radius: 100%;
   border: $size white solid;

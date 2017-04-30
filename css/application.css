@@ -522,6 +522,11 @@ a {
   display: flex;
   flex-direction: column; }
 
+.body-text-container, .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
+  font-family: "Muli", Helvetica, Arial, sans-serif;
+  background-color: #ee005e;
+  color: white; }
+
 .main-nav {
   position: fixed;
   width: 100%;
@@ -630,9 +635,6 @@ a {
   transform: rotate(-10deg); }
 
 .body-text-container {
-  font-family: "Muli", Helvetica, Arial, sans-serif;
-  background-color: #ee005e;
-  color: white;
   text-align: left;
   padding: 25px 0;
   box-shadow: 0 8px 10px -6px grey; }
@@ -649,9 +651,6 @@ a {
 .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
   justify-content: center;
   text-align: center;
-  font-family: "Muli", Helvetica, Arial, sans-serif;
-  background-color: #ee005e;
-  color: white;
   width: 260px;
   height: 260px;
   border-radius: 100%;

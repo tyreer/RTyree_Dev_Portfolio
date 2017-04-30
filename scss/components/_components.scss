@@ -5,9 +5,7 @@
 
 // Container for all pink background content areas
 .body-text-container {
-  font-family: $font-family--sans-serif;
-  background-color: $hot-pink;
-  color: $white;
+  @extend %common-font-color;
   text-align: left;
   padding: 25px 0;
   box-shadow: $box-shadow;
@@ -29,12 +27,10 @@
 
 .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
   @extend %flex-column;
+  @extend %common-font-color;
   // align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: $font-family--sans-serif;
-  background-color: $hot-pink;
-  color: $white;
   width: 260px;
   height: 260px;
   @include circle-border(8px);
