@@ -41,12 +41,12 @@
   }
 }
 
-.workSampleText {
-  @extend %flex-column;
+.body-padder--center {
+  // @extend %flex-column;
   text-align: center;
 }
 
-.workSampleHover:hover h2 {
+.work-sample__h2:hover {
   text-decoration: underline;
 }
 
@@ -59,12 +59,23 @@
   padding-bottom: 40px;
 }
 
-.workSampleText h2 {
+.work-sample__h2 {
   transform: rotate(-10deg);
   padding: 30px 0;
   font-family: $font-family--fantasy;
 }
 
+.testimonial-name{
+  font-weight: bold;
+}
+
+.testimonial-name:hover {
+  text-decoration: underline;
+}
+
+.testimonial-title {
+  font-style: italic;
+}
 // .work-sample-content {
 //   // font-family: $font-family--sans-serif;
 //   // background-color: $hot-pink;
