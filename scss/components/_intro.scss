@@ -1,9 +1,9 @@
-.introBubble {
+.title-container__div--intro {
   border: 5px solid white;
   box-shadow: $box-shadow;
 }
 
-.introTitleContainer {
+.title-container--intro {
   padding-top: 130px;
   padding-bottom: 50px;
   display: flex;
@@ -16,7 +16,7 @@
   }
 }
 
-.introBubble p {
+.title-container__div--intro p {
   font-size: 1em;
   @media #{$medium-breakpoint} {
     font-size: 1.15em;

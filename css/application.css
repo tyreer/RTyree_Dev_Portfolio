@@ -468,10 +468,10 @@ a {
   position: absolute;
   width: 1px; }
 
-.introBubble {
+.title-container__div--intro {
   animation: headerBob 2s linear infinite; }
 
-.introBubble:hover {
+.title-container__div--intro:hover {
   animation: headerBob .5s linear infinite;
   background: white;
   color: #ee005e; }
@@ -479,7 +479,7 @@ a {
 .profile-image:hover {
   animation: headerSpin 6s linear infinite; }
 
-.aboutBubble:hover, .workSampleBubble:hover, .testimonialsBubble:hover {
+.title-container__div:hover {
   animation: bodyBob 1s linear infinite; }
 
 @keyframes headerBob {
@@ -518,11 +518,11 @@ a {
   padding-top: 70px;
   margin-top: -70px; }
 
-.resume, .aboutTitleContainer, .workSampleTitleContainer, .testimonialsTitleContainer, .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
+.resume, .title-container, .title-container__div, .title-container__div--intro {
   display: flex;
   flex-direction: column; }
 
-.body-text-container, .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
+.body-text-container, .title-container__div, .title-container__div--intro {
   font-family: "Muli", Helvetica, Arial, sans-serif;
   background-color: #ee005e;
   color: white; }
@@ -594,11 +594,11 @@ a {
     #navBars {
       padding: 25px; } }
 
-.introBubble {
+.title-container__div--intro {
   border: 5px solid white;
   box-shadow: 0 8px 10px -6px grey; }
 
-.introTitleContainer {
+.title-container--intro {
   padding-top: 130px;
   padding-bottom: 50px;
   display: flex;
@@ -607,48 +607,43 @@ a {
   background: #ee005e;
   box-shadow: 0 8px 10px -6px grey; }
   @media (min-width: 830px) {
-    .introTitleContainer {
+    .title-container--intro {
       padding-top: 66px; } }
 
-.introBubble p {
+.title-container__div--intro p {
   font-size: 1em; }
   @media (min-width: 600px) {
-    .introBubble p {
+    .title-container__div--intro p {
       font-size: 1.15em; } }
 
 .about__h2--headline {
   text-align: center; }
 
 .resume {
+  border-radius: 100%;
+  border: 4px white solid;
   justify-content: center;
   width: 120px;
   height: 120px;
-  margin: auto;
-  border-radius: 100%;
-  border: 4px white solid; }
+  margin: auto; }
 
 .resume:hover {
   background: white;
   color: #ee005e; }
 
-.aboutBubble, .workSampleBubble, .testimonialsBubble, .resume {
-  transform: rotate(-10deg); }
-
 .body-text-container {
   text-align: left;
   padding: 25px 0;
   box-shadow: 0 8px 10px -6px grey; }
-  @media (min-width: 600px) {
-    .body-text-container {
-      padding: 25px 0;
-      width: 100%;
-      margin: auto; } }
 
-.aboutTitleContainer, .workSampleTitleContainer, .testimonialsTitleContainer {
+.title-container__div, .resume {
+  transform: rotate(-10deg); }
+
+.title-container {
   align-items: center;
   margin: 20px 0px; }
 
-.introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
+.title-container__div, .title-container__div--intro {
   justify-content: center;
   text-align: center;
   width: 260px;
@@ -657,7 +652,7 @@ a {
   border: 8px white solid;
   box-shadow: -5px 8px 6px -6px grey; }
   @media (min-width: 600px) {
-    .introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
+    .title-container__div, .title-container__div--intro {
       width: 350px;
       height: 350px; } }
 

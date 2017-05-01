@@ -4,11 +4,11 @@
 
 .resume {
   @extend %flex-column;
+  @include circle-border(4px);
   justify-content: center;
   width: 120px;
   height: 120px;
   margin: auto;
-  @include circle-border(4px);
 }
 
 .resume:hover {

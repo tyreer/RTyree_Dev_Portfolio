@@ -2,11 +2,11 @@
 // Animations
 /// —————————————————————————————————————————————————————————————————————
 
-.introBubble {
+.title-container__div--intro {
   animation: headerBob 2s linear infinite;
 }
 
-.introBubble:hover {
+.title-container__div--intro:hover {
   animation: headerBob .5s linear infinite;
   background: white;
   color: $hot-pink;
@@ -16,7 +16,7 @@
   animation: headerSpin 6s linear infinite;
 }
 
-.aboutBubble:hover, .workSampleBubble:hover, .testimonialsBubble:hover {
+.title-container__div:hover {
   animation: bodyBob 1s linear infinite;
 }
 

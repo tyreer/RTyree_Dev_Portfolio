@@ -1,28 +1,29 @@
-
-.aboutBubble, .workSampleBubble, .testimonialsBubble, .resume {
-  transform: rotate(-10deg);
-}
-
 // Container for all pink background content areas
 .body-text-container {
   @extend %common-font-color;
   text-align: left;
   padding: 25px 0;
   box-shadow: $box-shadow;
-  @media #{$medium-breakpoint} {
-    padding: 25px 0;
-    width: 100%;
-    margin: auto;
-  };
+  // @media #{$medium-breakpoint} {
+  //   width: 100%;
+  //   margin: auto;
+  // };
 }
 
-.aboutTitleContainer, .workSampleTitleContainer, .testimonialsTitleContainer {
+.title-container__div, .resume {
+  transform: rotate(-10deg);
+}
+
+
+// .about-title-container, .workSampleTitleContainer, .testimonialsTitleContainer {
+.title-container {
   @extend %flex-column;
   align-items: center;
   margin: 20px 0px;
 }
 
-.introBubble, .aboutBubble, .workSampleBubble, .testimonialsBubble {
+// Formerly bubble
+.title-container__div, .title-container__div--intro {
   @extend %flex-column;
   @extend %common-font-color;
   justify-content: center;
