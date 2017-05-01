@@ -80,7 +80,7 @@
   margin-bottom: 45px;
 }
 
-.contactBubble {
+.title-container__div--contact {
   text-align: center;
   padding: 10%;
   @media #{$medium-breakpoint} {
@@ -98,24 +98,24 @@
   }
 }
 
-.contactTitleContainer {
+.title-container--contact {
   background-color: $hot-pink;
   border-top: 7px white solid;
   border-bottom: 7px white solid;
 }
 
-.contactIconContainer {
+.contact-icon-container {
   width: 50%;
   display: flex;
   justify-content: space-around;
   margin: auto;
-  font-size: 1.4em;
+  font-size: 1.3em;
   @media #{$medium-breakpoint} {
     font-size: 1.6em;
   }
 }
 
-.contactIconContainer a {
+.contact-icon-container a {
   padding: 5%;
   margin: 5%;
   @include circle-border(3px);
@@ -125,7 +125,7 @@
   }
 }
 
-.contactIconContainer a:hover{
+.contact-icon-container a:hover{
   background: white;
   color: $hot-pink;
 }
