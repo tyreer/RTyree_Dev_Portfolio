@@ -1,3 +1,7 @@
+// —————————————————————————————————————————————————————————————————————
+// Shared component rules
+// —————————————————————————————————————————————————————————————————————
+
 // Container for all pink background content areas
 .body-text-container {
   @extend %common-font-color;
@@ -13,7 +17,6 @@
 .title-container__div, .resume {
   transform: rotate(-10deg);
 }
-
 
 // .about-title-container, .workSampleTitleContainer, .testimonialsTitleContainer {
 .title-container {
@@ -38,27 +41,27 @@
   }
 }
 
-.body-padder--center {
+.work-sample {
   text-align: center;
-}
-
-.work-sample__h2:hover {
-  text-decoration: underline;
-}
-
-.bordered-worksample {
-  border-bottom: 7px white dotted;
-  padding-bottom: 40px;
-}
-
-.last-worksample {
-  padding-bottom: 40px;
 }
 
 .work-sample__h2 {
   transform: rotate(-10deg);
   padding: 30px 0;
   font-family: $font-family--fantasy;
+}
+
+.work-sample__h2:hover {
+  text-decoration: underline;
+}
+
+.work-sample__p {
+  border-bottom: 7px white dotted;
+  padding-bottom: 40px;
+}
+
+.work-sample__p--last {
+  padding-bottom: 40px;
 }
 
 .testimonial-name{
