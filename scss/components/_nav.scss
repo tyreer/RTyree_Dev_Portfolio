@@ -57,7 +57,7 @@
   display: flex;
   flex-direction: column;
 	justify-content: center;
-	@media #{$medium-breakpoint}{
+	@media #{$large-breakpoint}{
 		justify-content: space-around;
 	}
 }
@@ -66,6 +66,23 @@
   font-family: $font-family--sans-serif;
   color: $hot-pink;
   padding: 10px;
+}
+
+.menu-anchor h3 {
+	@media #{$medium-breakpoint}{
+		font-size: 1.5em;
+		margin: .9vw;
+		padding: 5px;
+	}
+	@media #{$large-breakpoint}{
+		font-size: 2em;
+		margin: 2vw;
+		padding: inherit;
+	}
+}
+
+.menu-anchor:hover {
+	text-decoration: underline;
 }
 
 #nav-options {
