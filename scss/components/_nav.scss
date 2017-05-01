@@ -1,5 +1,5 @@
 // —————————————————————————————————————————————————————————————————————
-// Nav
+// Nav component rules
 // —————————————————————————————————————————————————————————————————————
 
 .main-nav {
@@ -30,7 +30,7 @@
   background-color: $white--opacity;
 }
 
-.navContainer {
+.nav-container {
   width: 60%;
   padding: 10px;
   display: flex;
@@ -40,11 +40,11 @@
   align-items: center;
 }
 
-.navDisplayToggleOff {
+.nav-display-toggle-off {
   display: none;
 }
 
-.navContainerToggleOn {
+.nav-container-toggle-on {
   height: 100vh;
   text-align: center;
   display: flex;
@@ -52,29 +52,28 @@
   justify-content: center;
 }
 
-.navDisplayToggleOn {
+.nav-display-toggle-on {
   height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.navContainerToggleOn a, .navContainerToggleOn p {
+.nav-container-toggle-on a, .nav-container-toggle-on p {
   font-family: $font-family--sans-serif;
   color: $hot-pink;
   padding: 10px;
 }
 
-#navOptions {
+#nav-options {
   margin-top: -50px;
 }
 
-#navBars {
+#nav-bars {
   padding: 30px;
 	margin: -15px 0px;
   color: $hot-pink;
 	@media #{$large-breakpoint}{
 		padding: 25px;
 	}
-
 }

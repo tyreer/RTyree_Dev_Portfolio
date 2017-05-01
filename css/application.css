@@ -455,7 +455,7 @@ a {
 .disable-scroll {
   overflow: hidden; }
 
-#navBars, a {
+#nav-bars, a {
   cursor: crosshair; }
 
 .screen-reader-text {
@@ -514,7 +514,7 @@ a {
       border-right: 7px white solid; } }
 
 /*Allows links within page to arrive at desired positioning */
-#about, #workSamples, #testimonials, #contact, #aboutJump, #workJump, #testimonialJump {
+#about, #work-samples, #testimonials, #contact, #about-jump, #work-jump, #testimonial-jump {
   padding-top: 70px;
   margin-top: -70px; }
 
@@ -553,7 +553,7 @@ a {
   z-index: 100;
   background-color: rgba(255, 255, 255, 0.98); }
 
-.navContainer {
+.nav-container {
   width: 60%;
   padding: 10px;
   display: flex;
@@ -562,36 +562,36 @@ a {
   margin: auto;
   align-items: center; }
 
-.navDisplayToggleOff {
+.nav-display-toggle-off {
   display: none; }
 
-.navContainerToggleOn {
+.nav-container-toggle-on {
   height: 100vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-.navDisplayToggleOn {
+.nav-display-toggle-on {
   height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-.navContainerToggleOn a, .navContainerToggleOn p {
+.nav-container-toggle-on a, .nav-container-toggle-on p {
   font-family: "Muli", Helvetica, Arial, sans-serif;
   color: #ee005e;
   padding: 10px; }
 
-#navOptions {
+#nav-options {
   margin-top: -50px; }
 
-#navBars {
+#nav-bars {
   padding: 30px;
   margin: -15px 0px;
   color: #ee005e; }
   @media (min-width: 830px) {
-    #navBars {
+    #nav-bars {
       padding: 25px; } }
 
 .title-container--intro {
@@ -625,31 +625,6 @@ a {
 .resume:hover {
   background: white;
   color: #ee005e; }
-
-.body-text-container {
-  text-align: left;
-  padding: 25px 0;
-  box-shadow: 0 8px 10px -6px grey; }
-
-.title-container__div, .resume {
-  transform: rotate(-10deg); }
-
-.title-container {
-  align-items: center;
-  margin: 20px 0px; }
-
-.title-container__div, .title-container__div--intro {
-  justify-content: center;
-  text-align: center;
-  width: 260px;
-  height: 260px;
-  border-radius: 100%;
-  border: 8px white solid;
-  box-shadow: -5px 8px 6px -6px grey; }
-  @media (min-width: 600px) {
-    .title-container__div, .title-container__div--intro {
-      width: 350px;
-      height: 350px; } }
 
 .work-sample {
   text-align: center; }
@@ -726,3 +701,28 @@ a {
 .contact-icon-container a:hover {
   background: white;
   color: #ee005e; }
+
+.body-text-container {
+  text-align: left;
+  padding: 25px 0;
+  box-shadow: 0 8px 10px -6px grey; }
+
+.title-container__div, .resume {
+  transform: rotate(-10deg); }
+
+.title-container {
+  align-items: center;
+  margin: 20px 0px; }
+
+.title-container__div, .title-container__div--intro {
+  justify-content: center;
+  text-align: center;
+  width: 260px;
+  height: 260px;
+  border-radius: 100%;
+  border: 8px white solid;
+  box-shadow: -5px 8px 6px -6px grey; }
+  @media (min-width: 600px) {
+    .title-container__div, .title-container__div--intro {
+      width: 350px;
+      height: 350px; } }

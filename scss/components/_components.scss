@@ -8,24 +8,20 @@
   text-align: left;
   padding: 25px 0;
   box-shadow: $box-shadow--container;
-  // @media #{$medium-breakpoint} {
-  //   width: 100%;
-  //   margin: auto;
-  // };
 }
 
 .title-container__div, .resume {
   transform: rotate(-10deg);
 }
 
-// .about-title-container, .workSampleTitleContainer, .testimonialsTitleContainer {
+// All title containers
 .title-container {
   @extend %flex-column;
   align-items: center;
   margin: 20px 0px;
 }
 
-// Formerly bubble
+// All circular title containers
 .title-container__div, .title-container__div--intro {
   @extend %flex-column;
   @extend %common-font-color;
@@ -39,93 +35,4 @@
     width: 350px;
     height: 350px;
   }
-}
-
-.work-sample {
-  text-align: center;
-}
-
-.work-sample__h2 {
-  transform: rotate(-10deg);
-  padding: 30px 0;
-  font-family: $font-family--fantasy;
-}
-
-.work-sample__h2:hover {
-  text-decoration: underline;
-}
-
-.work-sample__p {
-  border-bottom: 7px white dotted;
-  padding-bottom: 40px;
-}
-
-.work-sample__p--last {
-  padding-bottom: 40px;
-}
-
-.testimonial-name{
-  font-weight: bold;
-}
-
-.testimonial-name:hover {
-  text-decoration: underline;
-}
-
-.testimonial-title {
-  font-style: italic;
-}
-
-.body-padder--bottom-margin {
-  margin-bottom: 45px;
-}
-
-.title-container__div--contact {
-  text-align: center;
-  padding: 10%;
-  @media #{$medium-breakpoint} {
-    padding: 30px 0;
-  }
-}
-
-.profile-image {
-  width: 55%;
-  height: 55%;
-  @include circle-border(7px);
-  @media #{$medium-breakpoint} {
-    width: 250px;
-    height: 250px;
-  }
-}
-
-.title-container--contact {
-  background-color: $hot-pink;
-  border-top: 7px white solid;
-  border-bottom: 7px white solid;
-}
-
-.contact-icon-container {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  margin: auto;
-  font-size: 1.3em;
-  @media #{$medium-breakpoint} {
-    font-size: 1.6em;
-  }
-}
-
-.contact-icon-container a {
-  padding: 5%;
-  margin: 5%;
-  @include circle-border(3px);
-  @media #{$medium-breakpoint} {
-    padding: 25px;
-    margin: 25px;
-  }
-}
-
-.contact-icon-container a:hover{
-  background: white;
-  color: $hot-pink;
 }
