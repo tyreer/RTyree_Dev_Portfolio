@@ -577,9 +577,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  @media (min-width: 670px) {
-    .nav-container--full-screen {
-      justify-content: space-around; } }
 
 .nav-container--full-screen a, .nav-container--full-screen p {
   font-family: "Muli", Helvetica, Arial, sans-serif;
@@ -712,7 +709,7 @@ a {
   @media (min-width: 670px) {
     .contact-icon-container a {
       padding: 25px;
-      margin: 25px; } }
+      margin: 25px 10px; } }
 
 .contact-icon-container a:hover {
   background: white;
