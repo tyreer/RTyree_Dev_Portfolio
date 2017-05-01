@@ -589,14 +589,12 @@ a {
 @media (min-width: 600px) {
   .menu-anchor h3 {
     font-size: 1.5em;
-    margin: 1vw;
-    padding: 5px; } }
+    margin: .1vw; } }
 
 @media (min-width: 830px) {
   .menu-anchor h3 {
     font-size: 2em;
-    margin: 2vw;
-    padding: auto; } }
+    margin: 2vw; } }
 
 .menu-anchor:hover {
   text-decoration: underline; }
