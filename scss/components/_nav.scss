@@ -56,7 +56,10 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+	justify-content: center;
+	@media #{$medium-breakpoint}{
+		justify-content: space-around;
+	}
 }
 
 .nav-container--full-screen a, .nav-container--full-screen p {

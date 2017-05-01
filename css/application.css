@@ -577,6 +577,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media (min-width: 600px) {
+    .nav-container--full-screen {
+      justify-content: space-around; } }
 
 .nav-container--full-screen a, .nav-container--full-screen p {
   font-family: "Muli", Helvetica, Arial, sans-serif;
