@@ -3,7 +3,7 @@
   @extend %common-font-color;
   text-align: left;
   padding: 25px 0;
-  box-shadow: $box-shadow;
+  box-shadow: $box-shadow--container;
   // @media #{$medium-breakpoint} {
   //   width: 100%;
   //   margin: auto;
@@ -31,7 +31,7 @@
   width: 260px;
   height: 260px;
   @include circle-border(8px);
-  box-shadow: -5px 8px 6px -6px grey;
+  box-shadow: $box-shadow--title;
   @media #{$medium-breakpoint} {
     width: 350px;
     height: 350px;

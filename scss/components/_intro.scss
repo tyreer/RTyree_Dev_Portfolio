@@ -1,16 +1,10 @@
-.title-container__div--intro {
-  border: 5px solid white;
-  box-shadow: $box-shadow;
-}
-
 .title-container--intro {
   padding-top: 130px;
   padding-bottom: 50px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   background: $hot-pink;
-  box-shadow: $box-shadow;
+  box-shadow: $box-shadow--container;
   @media #{$large-breakpoint} {
     padding-top: 66px;
   }

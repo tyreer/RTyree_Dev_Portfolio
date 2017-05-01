@@ -594,15 +594,10 @@ a {
     #navBars {
       padding: 25px; } }
 
-.title-container__div--intro {
-  border: 5px solid white;
-  box-shadow: 0 8px 10px -6px grey; }
-
 .title-container--intro {
   padding-top: 130px;
   padding-bottom: 50px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   background: #ee005e;
   box-shadow: 0 8px 10px -6px grey; }
