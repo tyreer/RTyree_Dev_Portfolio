@@ -6,16 +6,16 @@ document.getElementById("nav-bars").addEventListener("click", toggleMobileMenu);
 .forEach(element => element.addEventListener("click", toggleMobileMenu));
 
 function toggleMobileMenu() {
-  if (document.getElementById("nav-options").className === "nav-display-toggle-off") {
-    document.getElementById("main-nav").className = "main-nav-opened";
-    document.getElementById("nav-options").className = "nav-display-toggle-on";
-    document.getElementById("nav-container").className = "nav-container-toggle-on";
+  if (document.getElementById("nav-options").className === "nav-options--collapsed") {
+    document.getElementById("main-nav").className = "main-nav--full-screen";
+    document.getElementById("nav-options").className = "nav-options--full-screen";
+    document.getElementById("nav-container").className = "nav-container--full-screen";
     document.getElementById("scroll-control").className = "disable-scroll";
     document.getElementById("nav-bars").textContent = "✕";
   } else {
-    document.getElementById("nav-options").className = "nav-display-toggle-off";
-    document.getElementById("main-nav").className = "main-nav";
-    document.getElementById("nav-container").className = "nav-container";
+    document.getElementById("nav-options").className = "nav-options--collapsed";
+    document.getElementById("main-nav").className = "main-nav--collapsed";
+    document.getElementById("nav-container").className = "nav-container--collapsed";
     document.getElementById("scroll-control").className = "";
     document.getElementById("nav-bars").textContent = "☰";
   }

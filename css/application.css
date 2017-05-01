@@ -527,13 +527,13 @@ a {
   background-color: #ee005e;
   color: white; }
 
-.main-nav {
+.main-nav--collapsed {
   position: fixed;
   width: 100%;
   z-index: 100;
   background-color: rgba(255, 255, 255, 0.98); }
   @media (min-width: 830px) {
-    .main-nav {
+    .main-nav--collapsed {
       background-color: white;
       bottom: 50px;
       right: 50px;
@@ -547,13 +547,13 @@ a {
       text-align: center;
       box-shadow: 0 10px 6px -6px #0433FF; } }
 
-.main-nav-opened {
+.main-nav--full-screen {
   position: fixed;
   width: 100%;
   z-index: 100;
   background-color: rgba(255, 255, 255, 0.98); }
 
-.nav-container {
+.nav-container--collapsed {
   width: 60%;
   padding: 10px;
   display: flex;
@@ -562,23 +562,23 @@ a {
   margin: auto;
   align-items: center; }
 
-.nav-display-toggle-off {
+.nav-options--collapsed {
   display: none; }
 
-.nav-container-toggle-on {
+.nav-options--full-screen {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.nav-container--full-screen {
   height: 100vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-.nav-display-toggle-on {
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.nav-container-toggle-on a, .nav-container-toggle-on p {
+.nav-container--full-screen a, .nav-container--full-screen p {
   font-family: "Muli", Helvetica, Arial, sans-serif;
   color: #ee005e;
   padding: 10px; }

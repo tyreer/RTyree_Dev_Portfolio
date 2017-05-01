@@ -2,7 +2,7 @@
 // Nav component rules
 // —————————————————————————————————————————————————————————————————————
 
-.main-nav {
+.main-nav--collapsed {
 	position: fixed;
 	width: 100%;
 	z-index: 100;
@@ -23,14 +23,14 @@
   }
 }
 
-.main-nav-opened {
+.main-nav--full-screen {
 	position: fixed;
 	width: 100%;
 	z-index: 100;
   background-color: $white--opacity;
 }
 
-.nav-container {
+.nav-container--collapsed {
   width: 60%;
   padding: 10px;
   display: flex;
@@ -40,11 +40,18 @@
   align-items: center;
 }
 
-.nav-display-toggle-off {
+.nav-options--collapsed {
   display: none;
 }
 
-.nav-container-toggle-on {
+.nav-options--full-screen {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-container--full-screen {
   height: 100vh;
   text-align: center;
   display: flex;
@@ -52,14 +59,7 @@
   justify-content: center;
 }
 
-.nav-display-toggle-on {
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.nav-container-toggle-on a, .nav-container-toggle-on p {
+.nav-container--full-screen a, .nav-container--full-screen p {
   font-family: $font-family--sans-serif;
   color: $hot-pink;
   padding: 10px;
