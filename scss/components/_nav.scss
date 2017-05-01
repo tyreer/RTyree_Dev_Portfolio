@@ -57,9 +57,9 @@
   display: flex;
   flex-direction: column;
 	justify-content: center;
-	@media #{$large-breakpoint}{
-		justify-content: space-around;
-	}
+	// @media #{$large-breakpoint}{
+	// 	justify-content: space-around;
+	// }
 }
 
 .nav-container--full-screen a, .nav-container--full-screen p {

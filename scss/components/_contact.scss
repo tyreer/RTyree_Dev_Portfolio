@@ -32,7 +32,7 @@
   justify-content: space-around;
   margin: auto;
   font-size: 1.3em;
-  @media #{$medium-breakpoint} {
+  @media #{$large-breakpoint} {
     font-size: 1.6em;
   }
 }
@@ -41,9 +41,9 @@
   padding: 5%;
   margin: 5%;
   @include circle-border(3px);
-  @media #{$medium-breakpoint} {
+  @media #{$large-breakpoint} {
     padding: 25px;
-    margin: 25px;
+    margin: 25px 10px;
   }
 }
 
