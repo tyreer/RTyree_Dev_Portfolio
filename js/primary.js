@@ -13,7 +13,7 @@ function toggleMobileMenu() {
     document.getElementById("scroll-control").className = "disable-scroll";
     document.getElementById("nav-bars").textContent = "✕";
 
-    document.ontouchmove = function(event){
+    document.ontouchmove = (event) => {
     event.preventDefault();
   }
   } else {
@@ -23,8 +23,6 @@ function toggleMobileMenu() {
     document.getElementById("scroll-control").className = "";
     document.getElementById("nav-bars").textContent = "☰";
 
-    document.ontouchmove = function(event){
-    return true;
-  }
+    document.ontouchmove = (event) => true;
   }
 };
