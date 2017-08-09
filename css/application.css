@@ -568,7 +568,7 @@ a {
   display: none; }
 
 .nav-options--full-screen {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -597,6 +597,9 @@ a {
 
 .menu-anchor:hover {
   text-decoration: underline; }
+
+#nav-options {
+  margin-top: -50px; }
 
 #nav-bars {
   padding: 30px;
