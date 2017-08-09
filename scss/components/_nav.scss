@@ -45,7 +45,7 @@
 }
 
 .nav-options--full-screen {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,9 +80,9 @@
 	text-decoration: underline;
 }
 
-#nav-options {
-  margin-top: -50px;
-}
+// #nav-options {
+//   margin-top: -50px;
+// }
 
 #nav-bars {
   padding: 30px;

@@ -455,7 +455,7 @@ a {
 .disable-scroll {
   overflow: hidden;
   position: relative;
-  height: 100vh; }
+  height: 100%; }
 
 #nav-bars, a {
   cursor: crosshair; }
@@ -568,7 +568,7 @@ a {
   display: none; }
 
 .nav-options--full-screen {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -597,9 +597,6 @@ a {
 
 .menu-anchor:hover {
   text-decoration: underline; }
-
-#nav-options {
-  margin-top: -50px; }
 
 #nav-bars {
   padding: 30px;
