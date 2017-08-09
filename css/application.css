@@ -454,7 +454,8 @@ a {
 
 .disable-scroll {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  height: 100vh; }
 
 #nav-bars, a {
   cursor: crosshair; }
