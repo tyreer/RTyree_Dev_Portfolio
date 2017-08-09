@@ -66,8 +66,6 @@ a {
 // Eliminate scroll option on desktop browsers when main-nav is full screen
 .disable-scroll {
   overflow: hidden;
-  position: relative;
-  height: 100vh;
 }
 
 #nav-bars, a {
