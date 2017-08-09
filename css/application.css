@@ -453,7 +453,8 @@ a {
   text-align: center; }
 
 .disable-scroll {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 #nav-bars, a {
   cursor: crosshair; }
