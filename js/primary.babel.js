@@ -15,7 +15,6 @@ function toggleMobileMenu() {
     document.getElementById("nav-container").className = "nav-container--full-screen";
     document.getElementById("scroll-control").className = "disable-scroll";
     document.getElementById("nav-bars").textContent = "✕";
-
     document.ontouchmove = function (event) {
       event.preventDefault();
     };
@@ -25,7 +24,6 @@ function toggleMobileMenu() {
     document.getElementById("nav-container").className = "nav-container--collapsed";
     document.getElementById("scroll-control").className = "";
     document.getElementById("nav-bars").textContent = "☰";
-
     document.ontouchmove = function (event) {
       return true;
     };

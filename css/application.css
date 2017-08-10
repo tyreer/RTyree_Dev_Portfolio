@@ -593,8 +593,9 @@ a {
     font-size: 2em;
     margin: 2vw; } }
 
-.menu-anchor:hover {
-  text-decoration: underline; }
+@media (min-width: 670px) {
+  .menu-anchor:hover {
+    text-decoration: underline; } }
 
 #nav-options {
   margin-top: -50px; }
