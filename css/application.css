@@ -449,6 +449,13 @@ a {
   text-decoration: none;
   color: white; }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent; }
+
 .center {
   text-align: center; }
 
@@ -625,8 +632,11 @@ a {
     .title-container__div--intro p {
       font-size: 1.15em; } }
 
-.about__h2--headline {
+.about__headline {
   text-align: center; }
+
+.about__skillsHeader {
+  text-decoration: underline; }
 
 .resume {
   border-radius: 100%;
