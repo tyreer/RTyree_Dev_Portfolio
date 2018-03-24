@@ -610,7 +610,8 @@ a {
 #nav-bars {
   padding: 30px;
   margin: -15px 0px;
-  color: #ee005e; }
+  color: #ee005e;
+  z-index: 10; }
   @media (min-width: 670px) {
     #nav-bars {
       padding: 25px; } }
