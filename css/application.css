@@ -704,7 +704,7 @@ a {
   border-bottom: 7px white solid; }
 
 .contact-icon-container {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: space-around;
   margin: auto;
