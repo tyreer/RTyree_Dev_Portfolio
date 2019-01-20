@@ -43,11 +43,21 @@ h4 {
   }
 }
 
-p {
+p, li {
   font-size: 1.1em;
   @media #{$medium-breakpoint} {
     font-size: 1.5em;
   }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  line-height: 1.4em;
 }
 
 a {
@@ -72,7 +82,7 @@ a {
 }
 
 // Eliminate scroll option on desktop browsers when main-nav is full screen
-.disable-scroll {
+.disable-scroll {padding: 0;
   overflow: hidden;
 }
 
