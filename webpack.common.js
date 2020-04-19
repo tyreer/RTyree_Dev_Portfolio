@@ -2,7 +2,6 @@ const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -39,21 +38,7 @@ module.exports = {
       hash: true,
       template: "./src/index.html",
       filename: "./index.html",
-    }),
-    new FaviconsWebpackPlugin({
-      logo: "./src/img/favicon.png",
-      prefix: "favicons/",
-      favicons: {
-        appName: "robert-tyree-portfolio",
-        appDescription: "Web developer portfolio for Robert Tyree",
-        background: "#ddd",
-        theme_color: "#ffffff",
-        icons: {
-          coast: false,
-          yandex: false,
-          appleStartup: false,
-        },
-      },
+      favicon: 'src/img/favicon.ico'
     }),
   ],
   output: {
