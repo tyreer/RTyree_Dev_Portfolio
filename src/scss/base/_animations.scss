@@ -52,3 +52,9 @@
 		transform: rotate(360deg);
 	}
 }
+
+@media (prefers-reduced-motion: reduce) {
+	.title-container__div--intro, .title-container__div--intro:hover, .profile-image:hover, .title-container__div:hover {
+		animation: none;
+	}	
+}
