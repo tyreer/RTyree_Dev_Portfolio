@@ -1,5 +1,5 @@
 Front end web developer portfolio of Robert Tyree
 
-[Live link here](https://tyreer.github.io/RTyree_Dev_Portfolio/)
+[tyreer.com](https://tyreer.com)
 
-![alt tag](https://raw.githubusercontent.com/tyreer/RTyree_Dev_Portfolio/master/img/social-media-img.png)
+![Robert Tyree Developer Portfolio Preview Image](https://github.com/tyreer/RTyree_Dev_Portfolio/blob/master/src/img/social-media-img.png)
