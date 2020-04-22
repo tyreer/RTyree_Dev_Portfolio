@@ -2,31 +2,30 @@
 // Global Variables
 // —————————————————————————————————————————————————————————————————————
 
-$box-shadow--container : 0 8px 10px -6px grey;
-$box-shadow--title     : -5px 8px 6px -6px grey;
+$box-shadow--container: 0 8px 10px -6px grey;
+$box-shadow--title: -5px 8px 6px -6px grey;
 
 // —————————————————————————————————————————————————————————————————————
 // Font families
 // —————————————————————————————————————————————————————————————————————
 
-$font-url--google: 'https://fonts.googleapis.com/css?family=Abril+Fatface|Muli';
+$font-url--google: "https://fonts.googleapis.com/css?family=Abril+Fatface|Muli";
 @import url($font-url--google);
 
-$font-family--sans-serif   : 'Muli', Helvetica, Arial, sans-serif;
-$font-family--fantasy      : 'Abril Fatface', fantasy;
+$font-family--sans-serif: "Muli", Helvetica, Arial, sans-serif;
+$font-family--fantasy: "Abril Fatface", fantasy;
 
 // —————————————————————————————————————————————————————————————————————
 // Base colors
 // —————————————————————————————————————————————————————————————————————
 
-$white          :   rgb(255, 255, 255);
-$white--opacity :   rgba(255, 255, 255, 0.98);
-$hot-pink       :   rgb(238, 0, 94);
-
+$white: rgb(255, 255, 255);
+$white--opacity: rgba(255, 255, 255, 0.98);
+$hot-pink: rgb(238, 0, 94);
 
 // —————————————————————————————————————————————————————————————————————
 // Media query breakpoints
 // —————————————————————————————————————————————————————————————————————
 
-$medium-breakpoint: '(min-width: 600px)';
-$large-breakpoint: '(min-width: 670px)';
+$medium-breakpoint: "(min-width: 600px)";
+$large-breakpoint: "(min-width: 670px)";

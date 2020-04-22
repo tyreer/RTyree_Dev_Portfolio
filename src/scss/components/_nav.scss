@@ -3,12 +3,12 @@
 // —————————————————————————————————————————————————————————————————————
 
 .main-nav--collapsed {
-	position: fixed;
-	width: 100%;
-	z-index: 100;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
   background-color: $white--opacity;
-	@media #{$large-breakpoint} {
-		background-color: white;
+  @media #{$large-breakpoint} {
+    background-color: white;
     bottom: 50px;
     right: 50px;
     width: 90px;
@@ -19,14 +19,14 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 0 10px 6px -6px #0433FF;
+    box-shadow: 0 10px 6px -6px #0433ff;
   }
 }
 
 .main-nav--full-screen {
-	position: fixed;
-	width: 100%;
-	z-index: 100;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
   background-color: $white--opacity;
 }
 
@@ -56,30 +56,31 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-	justify-content: center;
+  justify-content: center;
 }
 
-.nav-container--full-screen a, .nav-container--full-screen p {
+.nav-container--full-screen a,
+.nav-container--full-screen p {
   font-family: $font-family--sans-serif;
   color: $hot-pink;
   padding: 10px;
 }
 
 .menu-anchor h3 {
-	@media #{$medium-breakpoint}{
-		font-size: 1.5em;
-		margin: .1vw;
-	}
-	@media #{$large-breakpoint}{
-		font-size: 2em;
-		margin: 2vw;
-	}
+  @media #{$medium-breakpoint} {
+    font-size: 1.5em;
+    margin: 0.1vw;
+  }
+  @media #{$large-breakpoint} {
+    font-size: 2em;
+    margin: 2vw;
+  }
 }
 
 .menu-anchor:hover {
-	@media #{$large-breakpoint} {
-		text-decoration: underline;
-	}
+  @media #{$large-breakpoint} {
+    text-decoration: underline;
+  }
 }
 
 #nav-options {
@@ -88,10 +89,10 @@
 
 #nav-bars {
   padding: 30px;
-	margin: -15px 0px;
+  margin: -15px 0px;
   color: $hot-pink;
-	z-index: 10;
-	@media #{$large-breakpoint}{
-		padding: 25px;
-	}
+  z-index: 10;
+  @media #{$large-breakpoint} {
+    padding: 25px;
+  }
 }

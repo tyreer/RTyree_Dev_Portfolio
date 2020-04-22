@@ -10,7 +10,8 @@
   box-shadow: $box-shadow--container;
 }
 
-.title-container__div, .resume {
+.title-container__div,
+.resume {
   transform: rotate(-10deg);
 }
 
@@ -22,7 +23,8 @@
 }
 
 // All circular title containers
-.title-container__div, .title-container__div--intro {
+.title-container__div,
+.title-container__div--intro {
   @extend %flex-column;
   @extend %common-font-color;
   justify-content: center;
