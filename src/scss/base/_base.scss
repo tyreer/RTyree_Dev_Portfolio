@@ -43,7 +43,8 @@ h4 {
   }
 }
 
-p, li {
+p,
+li {
   font-size: 1.1em;
   @media #{$medium-breakpoint} {
     font-size: 1.5em;
@@ -70,7 +71,7 @@ textarea,
 button,
 select,
 a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /// —————————————————————————————————————————————————————————————————————
@@ -82,22 +83,24 @@ a {
 }
 
 // Eliminate scroll option on desktop browsers when main-nav is full screen
-.disable-scroll {padding: 0;
+.disable-scroll {
+  padding: 0;
   overflow: hidden;
 }
 
-#nav-bars, a {
+#nav-bars,
+a {
   cursor: crosshair;
 }
 
 // Screen reader text
 .screen-reader-text {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
