@@ -255,12 +255,18 @@
       <div class="title-container--contact">
         <div class="title-container__div--contact">
           <a href="https://www.linkedin.com/in/tyreer" target="_blank">
-            <img
-              class="profile-image"
-              src="./img/portrait_robert_tyree-1x.jpg"
-              srcset="./img/portrait_robert_tyree-1x.jpg 1x, ./img/portrait_robert_tyree-2x.jpg 2x"
-              alt="Photograph of Robert Tyree"
-            />
+            <picture>
+              <source
+                srcset="./img/portrait_robert_tyree-1x.webp 1x, ./img/portrait_robert_tyree-2x.webp 2x"
+                type="image/webp"
+              />
+              <img
+                src="./img/portrait_robert_tyree-1x.jpg"
+                srcset="./img/portrait_robert_tyree-1x.jpg 1x, ./img/portrait_robert_tyree-2x.jpg 2x"
+                alt="Photograph of Robert Tyree"
+                class="profile-image"
+              />
+            </picture>
           </a>
         </div>
       </div>
