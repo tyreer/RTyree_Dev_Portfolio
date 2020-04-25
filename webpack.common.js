@@ -16,12 +16,12 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif|webp)$/,
         use: ["file-loader"],
       },
       {
         test: /\.m?js$/,
-        exclude: /(node_modules)/,
+        include: [path.resolve(__dirname, "src/js")],
         use: {
           loader: "babel-loader",
           options: {
@@ -38,7 +38,7 @@ module.exports = {
       hash: true,
       template: "./src/index.html",
       filename: "./index.html",
-      favicon: 'src/img/favicon.ico'
+      favicon: "src/img/favicon.ico",
     }),
   ],
   output: {
