@@ -104,6 +104,7 @@ section {
   width: 670px;
   height: 80px;
   background: #103ffb;
+  transition: transform 0.25s cubic-bezier(0.53, 0.01, 0.36, 1.63);
 
   &--1 {
     top: 140px;
@@ -111,5 +112,13 @@ section {
 
   &--2 {
     top: 275px;
+  }
+
+  &--left {
+    transform: translateX(-55%) rotate(-20deg);
+  }
+
+  &--right {
+    transform: translateX(-45%) rotate(-20deg);
   }
 }
