@@ -102,16 +102,28 @@ section {
   transform: translateX(-50%) rotate(-20deg);
   box-shadow: 0 8px 10px -6px black;
   width: 670px;
-  height: 80px;
+  height: 50px;
   background: #103ffb;
   transition: transform 0.5s cubic-bezier(0.53, 0.01, 0.36, 1.1);
 
+  @media #{$medium-breakpoint} {
+    height: 80px;
+  }
+
   &--top {
-    top: 140px;
+    top: 200px;
+
+    @media #{$medium-breakpoint} {
+      top: 140px;
+    }
   }
 
   &--bottom {
-    top: 275px;
+    top: 275git px;
+
+    @media #{$medium-breakpoint} {
+      top: 275px;
+    }
   }
 
   &--initial-left {
