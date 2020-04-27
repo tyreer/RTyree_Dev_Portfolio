@@ -111,7 +111,7 @@ section {
   }
 
   &--top {
-    top: 200px;
+    top: 205px;
 
     @media #{$medium-breakpoint} {
       top: 140px;
@@ -119,7 +119,7 @@ section {
   }
 
   &--bottom {
-    top: 275px;
+    top: 285px;
 
     @media #{$medium-breakpoint} {
       top: 275px;
