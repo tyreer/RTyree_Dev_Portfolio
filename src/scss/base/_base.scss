@@ -104,14 +104,26 @@ section {
   width: 670px;
   height: 80px;
   background: #103ffb;
-  transition: transform 0.25s cubic-bezier(0.53, 0.01, 0.36, 1.63);
+  transition: transform 0.5s cubic-bezier(0.53, 0.01, 0.36, 1.1);
 
-  &--1 {
+  &--top {
     top: 140px;
   }
 
-  &--2 {
+  &--bottom {
     top: 275px;
+  }
+
+  &--initial-left {
+    transform: translateX(-200%) rotate(-20deg);
+  }
+
+  &--initial-right {
+    transform: translateX(200%) rotate(-20deg);
+  }
+
+  &--fast {
+    transition: transform 0.25s cubic-bezier(0.53, 0.01, 0.36, 1.63);
   }
 
   &--left {
