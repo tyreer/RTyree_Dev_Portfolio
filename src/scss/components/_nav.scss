@@ -49,7 +49,10 @@
     z-index: 10;
     font-size: 22px;
     padding: 0;
-    transition: transform 0.2s 0.25s ease-in;
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: transform 0.2s 0.25s ease-in;
+    }
 
     @media #{$large-breakpoint} {
       border-width: 2px;

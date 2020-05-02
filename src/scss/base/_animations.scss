@@ -1,23 +1,24 @@
 /// —————————————————————————————————————————————————————————————————————
 // Animations
-/// —————————————————————————————————————————————————————————————————————
+/// ————————————
+@media (prefers-reduced-motion: no-preference) {
+  .title-container__div--intro {
+    animation: headerBob 2s linear infinite;
+  }
 
-.title-container__div--intro {
-  animation: headerBob 2s linear infinite;
-}
+  .title-container__div--intro:hover {
+    animation: headerBob 0.5s linear infinite;
+    background: white;
+    color: $hot-pink;
+  }
 
-.title-container__div--intro:hover {
-  animation: headerBob 0.5s linear infinite;
-  background: white;
-  color: $hot-pink;
-}
+  .profile-image:hover {
+    animation: headerSpin 6s linear infinite;
+  }
 
-.profile-image:hover {
-  animation: headerSpin 6s linear infinite;
-}
-
-.title-container__div:hover {
-  animation: bodyBob 1s linear infinite;
+  .title-container__div:hover {
+    animation: bodyBob 1s linear infinite;
+  }
 }
 
 @keyframes headerBob {
@@ -50,14 +51,5 @@
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .title-container__div--intro,
-  .title-container__div--intro:hover,
-  .profile-image:hover,
-  .title-container__div:hover {
-    animation: none;
   }
 }
