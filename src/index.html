@@ -4,10 +4,10 @@
     <!-- metadata & tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio of frontend web developer Robert Tyree" />
-    <meta property="og:url" content="http://www.tyreer.com" />
+    <meta name="description" content="Frontend web developer portfolio for Robert Tyree" />
+    <meta property="og:url" content="https://www.tyreer.com" />
     <meta property="og:title" content="Developer: Robert Tyree" />
-    <meta property="og:description" content="Portfolio of frontend web developer Robert Tyree" />
+    <meta property="og:description" content="Frontend web developer portfolio for Robert Tyree" />
     <meta property="og:image" content="http://www.tyreer.com/img/social-media-img.png" />
     <meta property="og:image:type" content="png" />
     <title>Robert Tyree | Web Developer</title>
@@ -17,19 +17,22 @@
   </head>
 
   <body>
-    <div id="top"></div>
-    <div class="div-bg div-bg--top div-bg--initial-left"></div>
-    <div class="div-bg div-bg--bottom div-bg--initial-right"></div>
+    <!-- background start -->
+    <div id="top" aria-hidden="true" role="presentation"></div>
+    <div class="div-bg div-bg--top div-bg--initial-left" aria-hidden="true" role="presentation"></div>
+    <div class="div-bg div-bg--bottom div-bg--initial-right" aria-hidden="true" role="presentation"></div>
+    <!-- background end -->
+
     <!-- nav start -->
-    <nav id="main-nav" class="main-nav--collapsed" role="navigation">
+    <nav id="main-nav" class="main-nav main-nav--collapsed" role="navigation">
       <div id="nav-container" class="nav-container--collapsed">
-        <h3 id="nav-bars">☰</h3>
-        <div id="nav-options" class="nav-options--collapsed">
-          <a class="menu-anchor" href="#about"><h3>about</h3></a>
-          <a class="menu-anchor" href="#work-samples"><h3>work samples</h3></a>
-          <a class="menu-anchor" href="#testimonials"><h3>testimonials</h3></a>
-          <a class="menu-anchor" href="#contact"><h3>contact</h3></a>
-        </div>
+        <button id="nav-bars" class="main-nav__button text-3">☰</button>
+        <ul id="nav-options" class="nav-options--collapsed">
+          <li class="main-nav__li"><a class="main-nav__link" href="#about">about</a></li>
+          <li class="main-nav__li"><a class="main-nav__link" href="#work-samples">work samples</a></li>
+          <li class="main-nav__li"><a class="main-nav__link" href="#testimonials">testimonials</a></li>
+          <li class="main-nav__li"><a class="main-nav__link" href="#contact">contact</a></li>
+        </ul>
       </div>
     </nav>
     <!-- nav end -->
