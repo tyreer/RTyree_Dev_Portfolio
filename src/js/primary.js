@@ -4,7 +4,7 @@ const toggleMobileMenu = () => {
     document.getElementById("nav-options").className = "nav-options--full-screen";
     document.getElementById("nav-container").className = "nav-container--full-screen";
     document.getElementById("scroll-control").className = "disable-scroll";
-    document.getElementById("nav-bars").textContent = "✕";
+    document.getElementById("nav-bars").textContent = "+";
     document.getElementById("nav-bars").blur();
     document.ontouchmove = (event) => {
       event.preventDefault();
