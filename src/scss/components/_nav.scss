@@ -26,6 +26,8 @@
       width: auto;
       height: auto;
       margin: 0px;
+      border-radius: 50%;
+      transform: rotate(0deg);
     }
   }
 
@@ -39,7 +41,7 @@
   &__button {
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    transform: rotate(45deg);
     border: 1px solid $hot-pink;
     margin: auto;
     background: transparent;
@@ -47,6 +49,7 @@
     z-index: 10;
     font-size: 22px;
     padding: 0;
+    transition: transform 0.2s 0.25s ease-in;
 
     @media #{$large-breakpoint} {
       border-width: 2px;
