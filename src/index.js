@@ -1,3 +1,3 @@
 import "./scss/application.scss";
-import "./js/primary";
+import "./js/nav";
 import "./js/intersection";
