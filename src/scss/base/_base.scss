@@ -59,6 +59,11 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+section {
+  position: relative;
+  z-index: 1;
+}
+
 /// —————————————————————————————————————————————————————————————————————
 // Utility classes
 /// —————————————————————————————————————————————————————————————————————
@@ -88,62 +93,4 @@ a {
   padding: 0;
   position: absolute;
   width: 1px;
-}
-
-// Background-related styles
-
-section {
-  position: relative;
-  z-index: 1;
-}
-
-.div-bg {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%) rotate(-20deg);
-  box-shadow: 0 8px 10px -6px black;
-  width: 670px;
-  height: 50px;
-  background: #103ffb;
-  transition: transform 0.5s cubic-bezier(0.53, 0.01, 0.36, 1.1);
-
-  @media #{$medium-breakpoint} {
-    height: 80px;
-  }
-
-  &--top {
-    top: 205px;
-
-    @media #{$medium-breakpoint} {
-      top: 140px;
-    }
-  }
-
-  &--bottom {
-    top: 285px;
-
-    @media #{$medium-breakpoint} {
-      top: 275px;
-    }
-  }
-
-  &--initial-left {
-    transform: translateX(-200%) rotate(-20deg);
-  }
-
-  &--initial-right {
-    transform: translateX(200%) rotate(-20deg);
-  }
-
-  &--fast {
-    transition: transform 0.25s cubic-bezier(0.53, 0.01, 0.36, 1.63);
-  }
-
-  &--left {
-    transform: translateX(-55%) rotate(-20deg);
-  }
-
-  &--right {
-    transform: translateX(-45%) rotate(-20deg);
-  }
 }
