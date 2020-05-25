@@ -4,11 +4,18 @@
 
   &__text-container {
     text-transform: uppercase;
-    height: 250px;
-    width: 245px;
+    height: 210px;
+    width: 250px;
     margin: auto;
     border: 2px solid;
     padding: 25px 0 40px;
+
+    @media #{$large-breakpoint} {
+      &:hover {
+        background-color: $primary-bg;
+        cursor: crosshair;
+      }
+    }
   }
 
   &__text {
