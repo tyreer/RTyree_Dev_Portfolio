@@ -4,21 +4,21 @@
 $slight-snap-timing: cubic-bezier(0.53, 0.01, 0.36, 1.1);
 $slight-snap-timing-2: cubic-bezier(0.53, 0.01, 0.36, 1.63);
 
-.title-container__div--intro {
-  transition: opacity 0.2s 0.25s, transform 0.5s 0.25s;
-  position: relative;
-}
+// .title-container__div--intro {
+//   transition: opacity 0.2s 0.25s, transform 0.5s 0.25s;
+//   position: relative;
+// }
 
-.title-container--initial {
-  opacity: 0;
-  transform: translateY(20px) rotate(125deg);
-}
+// .title-container--initial {
+//   opacity: 0;
+//   transform: translateY(20px) rotate(125deg);
+// }
 
 @media (prefers-reduced-motion: no-preference) {
   .title-container__div--intro:hover {
     animation: headerBob 0.5s linear infinite;
     background: white;
-    color: $hot-pink;
+    color: $primary-bg;
   }
 
   .profile-image:hover {
