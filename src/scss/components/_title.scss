@@ -1,0 +1,23 @@
+.title {
+  height: 65vh;
+  margin-top: 100px;
+
+  &__text-container {
+    text-transform: uppercase;
+    height: 250px;
+    width: 245px;
+    margin: auto;
+    border: 2px solid;
+    padding: 25px 0 40px;
+  }
+
+  &__text {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+  }
+}
