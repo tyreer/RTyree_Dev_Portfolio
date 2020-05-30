@@ -20,21 +20,23 @@
     width: 100%;
     z-index: 100;
     background-color: $white--opacity;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media #{$large-breakpoint} {
-      display: flex;
       bottom: 50px;
       right: 50px;
-      width: 90px;
-      height: 90px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
-      box-shadow: 0 10px 6px -6px #0433ff;
+      border: 3px solid $accent;
+      // box-shadow: 0 10px 6px -6px #0433ff;
       background-color: white;
       top: auto;
     }
 
     .main-nav__button {
-      padding: 20px;
       border: none;
       width: auto;
       height: auto;
@@ -42,6 +44,10 @@
       border-radius: 50%;
       transform: rotate(0deg);
       color: $accent;
+
+      @media #{$large-breakpoint} {
+        font-size: 17px;
+      }
     }
   }
 
@@ -64,7 +70,7 @@
     color: $primary-bg;
     z-index: 10;
     font-size: 22px;
-    padding: 0;
+    padding: 12px;
 
     @media (prefers-reduced-motion: no-preference) {
       transition: transform 0.2s 0.25s ease-in;
@@ -129,8 +135,9 @@
 }
 
 .nav-container--collapsed {
-  text-align: center;
-  margin: auto;
+  @media #{$large-breakpoint} {
+    flex: 1;
+  }
 }
 
 .nav-container--full-screen {
