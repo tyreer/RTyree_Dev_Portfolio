@@ -2,7 +2,7 @@ const navOptions = document.getElementById("nav-options");
 const mainNav = document.getElementById("main-nav");
 const navContainer = document.getElementById("nav-container");
 const scrollControl = document.getElementById("scroll-control");
-const navBars = document.getElementById("nav-bars");
+const navButton = document.getElementById("nav-button");
 
 function toggleMenu() {
   const isCollapsed = navOptions.className.includes("nav-options--collapsed");
@@ -14,15 +14,18 @@ function toggleMenu() {
   navContainer.className = `nav-container${isCollapsed ? "--full-screen" : "--collapsed"}`;
 
   // Manage button
-  navBars.textContent = isCollapsed ? "+" : "☰";
-  navBars.blur();
+  navButton.textContent = isCollapsed ? "+" : "☰";
+  navButton.blur();
 
   // Disable scroll
   scrollControl.classList.toggle("disable-scroll");
   document.ontouchmove = isCollapsed ? (event) => event.preventDefault() : (event) => !!event;
+
+  // Set ARIA attributes
+  navButton.setAttribute("aria-expanded", !!isCollapsed);
 }
 
-navBars.addEventListener("click", toggleMenu);
+navButton.addEventListener("click", toggleMenu);
 [...document.getElementsByClassName("main-nav__link")].forEach((element) =>
   element.addEventListener("click", toggleMenu)
 );
