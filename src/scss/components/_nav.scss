@@ -3,6 +3,16 @@
 // —————————————————————————————————————————————————————————————————————
 
 .main-nav {
+  transform: translateY(0);
+  transition: transform 0.25s;
+
+  svg {
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    fill: currentColor;
+  }
+
   &--collapsed {
     position: fixed;
     top: 0;
@@ -39,6 +49,8 @@
     width: 100%;
     z-index: 100;
     background-color: $white--opacity;
+    top: 0;
+    transform: translateY(32px);
   }
 
   &__button {
@@ -67,7 +79,8 @@
 
   &__li {
     margin-bottom: 20px;
-
+    position: relative;
+    color: $primary-bg;
     @media #{$large-breakpoint} {
       margin-bottom: 40px;
     }
@@ -77,7 +90,6 @@
     display: block;
     font-size: 1.25em;
     padding: 20px;
-    color: $primary-bg;
     font-family: $font-family--sans-serif;
 
     &:hover {
@@ -102,6 +114,7 @@
   height: 100vh;
   display: grid;
   justify-content: center;
+  background-color: $accent;
 }
 
 .nav-options--collapsed {
