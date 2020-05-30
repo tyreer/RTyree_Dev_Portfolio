@@ -22,7 +22,7 @@ $slight-snap-timing-2: cubic-bezier(0.53, 0.01, 0.36, 1.63);
   }
 
   .profile-image:hover {
-    animation: headerSpin 6s linear infinite;
+    animation: fullSpin 6s linear infinite;
   }
 
   .title-container__div {
@@ -54,7 +54,7 @@ $slight-snap-timing-2: cubic-bezier(0.53, 0.01, 0.36, 1.63);
   }
 }
 
-@keyframes headerSpin {
+@keyframes fullSpin {
   0% {
     transform: rotate(0deg);
   }
