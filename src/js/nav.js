@@ -11,10 +11,9 @@ function toggleMenu() {
   mainNav.classList.toggle("main-nav--collapsed");
   mainNav.classList.toggle("main-nav--full-screen");
   navOptions.className = `nav-options${isCollapsed ? "--full-screen" : "--collapsed"}`;
-  navContainer.className = `nav-container${isCollapsed ? "--full-screen" : "--collapsed"}`;
+  navContainer.className = `nav-container nav-container${isCollapsed ? "--full-screen" : "--collapsed"}`;
 
   // Manage button
-  navButton.textContent = isCollapsed ? "+" : "☰";
   navButton.blur();
 
   // Disable scroll

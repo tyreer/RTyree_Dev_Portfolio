@@ -3,73 +3,49 @@
 // —————————————————————————————————————————————————————————————————————
 
 .main-nav {
-  transform: translateY(0);
-  transition: transform 0.25s;
-
-  svg {
-    fill: currentColor;
-
-    @media (prefers-reduced-motion: no-preference) {
-      animation: 8s fullSpin linear infinite;
-    }
-  }
+  position: fixed;
+  text-align: center;
+  padding: 5px 0;
+  z-index: 100;
+  background-color: $white--opacity;
+  width: 100%;
+  top: 0;
 
   &--collapsed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    background-color: $white--opacity;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @media #{$large-breakpoint} {
-      bottom: 50px;
-      right: 50px;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      border: 3px solid $accent;
-      // box-shadow: 0 10px 6px -6px #0433ff;
-      background-color: white;
-      top: auto;
+    .main-nav__icon--close {
+      display: none;
     }
 
-    .main-nav__button {
-      border: none;
+    @media #{$large-breakpoint} {
+      top: auto;
+      padding: 0;
+      bottom: 40px;
+      right: 40px;
       width: auto;
-      height: auto;
-      margin: 0px;
-      border-radius: 50%;
-      transform: rotate(0deg);
-      color: $accent;
-
-      @media #{$large-breakpoint} {
-        font-size: 17px;
-      }
+      background-color: transparent;
     }
   }
 
   &--full-screen {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    background-color: $white--opacity;
-    top: 0;
-    transform: translateY(32px);
+    .main-nav__icon--menu {
+      display: none;
+    }
+    .main-nav__button {
+      border: none;
+      transform: rotate(45deg);
+      padding: 9px;
+    }
   }
 
   &__button {
-    width: 60px;
-    height: 60px;
-    transform: rotate(45deg);
-    border: 2px solid $primary-bg;
+    border: none;
     margin: auto;
+    display: flex;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    color: $accent;
     background: transparent;
-    color: $primary-bg;
-    z-index: 10;
-    font-size: 22px;
+    // z-index: 10;
     padding: 12px;
 
     @media (prefers-reduced-motion: no-preference) {
@@ -77,39 +53,25 @@
     }
 
     @media #{$large-breakpoint} {
-      border-width: 2px;
-      width: 80px;
-      height: 80px;
-      font-size: 24px;
+      border: 3px solid $accent;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+
+    &--menu {
+      width: 20px;
+      height: 20px;
     }
   }
 
   &__li {
     margin-bottom: 20px;
     color: $primary-bg;
+
     @media #{$large-breakpoint} {
       margin-bottom: 40px;
-    }
-
-    &:nth-of-type(1) {
-      svg {
-        animation-delay: 0.25s;
-      }
-    }
-    &:nth-of-type(2) {
-      svg {
-        animation-delay: 0.5s;
-      }
-    }
-    &:nth-of-type(3) {
-      svg {
-        animation-delay: 0.75s;
-      }
-    }
-    &:nth-of-type(4) {
-      svg {
-        animation-delay: 1s;
-      }
     }
   }
 
@@ -134,6 +96,11 @@
   }
 }
 
+.nav-container {
+  transform: translateY(300px);
+  transition: transform 0.25s;
+}
+
 .nav-container--collapsed {
   @media #{$large-breakpoint} {
     flex: 1;
@@ -148,6 +115,8 @@
   background-color: $accent-3;
   padding-top: 10px;
   border-top: 3px solid $accent;
+  transform: translateY(0);
+  margin-top: 5px;
 }
 
 .nav-options--collapsed {
