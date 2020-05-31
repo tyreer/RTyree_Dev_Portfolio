@@ -97,8 +97,13 @@
 }
 
 .nav-container {
-  transform: translateY(300px);
-  transition: transform 0.25s;
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s;
+  transform: translateY(400px);
+
+  @media #{$large-breakpoint} {
+    transform: translateY(0) translateX(60vw);
+  }
 }
 
 .nav-container--collapsed {
@@ -116,7 +121,12 @@
   padding-top: 10px;
   border-top: 3px solid $accent;
   transform: translateY(0);
+  opacity: 1;
   margin-top: 5px;
+
+  @media #{$large-breakpoint} {
+    transform: translateX(48vw);
+  }
 }
 
 .nav-options--collapsed {
