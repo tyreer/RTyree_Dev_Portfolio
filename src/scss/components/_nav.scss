@@ -64,6 +64,13 @@
       width: 20px;
       height: 20px;
     }
+
+    &--close {
+      @media #{$large-breakpoint} {
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 
   &__li {
@@ -126,6 +133,7 @@
 
   @media #{$large-breakpoint} {
     transform: translateX(48vw);
+    border-width: 6px;
   }
 }
 
