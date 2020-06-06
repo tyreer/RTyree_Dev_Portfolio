@@ -44,8 +44,8 @@
 
       @media #{$large-breakpoint} {
         margin: 20px auto;
-        color: white;
-        border: 1px solid white;
+        color: $white;
+        border: 1px solid $white;
         border-radius: 0;
       }
     }
