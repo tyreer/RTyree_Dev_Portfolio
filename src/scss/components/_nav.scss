@@ -3,13 +3,19 @@
 // —————————————————————————————————————————————————————————————————————
 
 .main-nav {
+  display: flex;
   position: fixed;
   text-align: center;
-  padding: 5px 0;
+  padding: 10px 0;
   z-index: 100;
   background-color: $white--opacity;
   width: 100%;
   top: 0;
+  box-shadow: $box-shadow--title;
+
+  @media #{$large-breakpoint} {
+    display: block;
+  }
 
   &--collapsed {
     .main-nav__icon--close {
@@ -23,13 +29,14 @@
       right: 40px;
       width: auto;
       background-color: transparent;
+      box-shadow: none;
     }
   }
 
   &--full-screen {
     @media #{$large-breakpoint} {
       background-color: $accent;
-      padding-top: 80px;
+      padding-top: 7vh;
       border-top: 25px solid $white;
     }
 
@@ -89,7 +96,7 @@
     color: $primary-bg;
 
     @media #{$large-breakpoint} {
-      margin-bottom: 40px;
+      margin-bottom: 3vh;
     }
   }
 
@@ -187,7 +194,7 @@
   }
 
   &--full-screen {
-    margin: 75px 0;
+    margin: 8vh 0;
 
     .main-nav__link {
       display: flex;
