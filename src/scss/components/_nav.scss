@@ -30,7 +30,7 @@
     @media #{$large-breakpoint} {
       background-color: $accent;
       padding-top: 80px;
-      margin-top: 25px;
+      border-top: 25px solid $white;
     }
 
     .main-nav__icon--menu {
@@ -62,7 +62,7 @@
     padding: 12px;
 
     @media (prefers-reduced-motion: no-preference) {
-      transition: transform 0.2s 0.3s ease-in;
+      transition: transform 0.2s 0.4s ease-in;
     }
 
     @media #{$large-breakpoint} {
@@ -117,12 +117,12 @@
 
 .nav-container {
   opacity: 0;
-  transition: transform 0.3s ease-out, opacity 0.3s;
+  transition: transform 0.4s $slight-snap-timing, opacity 0.3s;
   transform: translateY(400px);
 
   @media #{$large-breakpoint} {
     transform: translateY(0) translateX(30vw);
-    transition: transform 0.3s ease-out;
+    transition: transform 0.4s $slight-snap-timing;
   }
 }
 
