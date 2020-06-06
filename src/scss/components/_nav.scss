@@ -59,11 +59,8 @@
 
   &__icon {
     fill: currentColor;
-
-    &--menu {
-      width: 20px;
-      height: 20px;
-    }
+    width: 20px;
+    height: 20px;
 
     &--close {
       @media #{$large-breakpoint} {
@@ -86,7 +83,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.25em;
+    max-width: 230px;
+    margin: auto;
+    font-size: 16px;
     padding: 20px 45px;
     font-family: $font-family--sans-serif;
 
@@ -124,9 +123,8 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
-  background-color: $accent-3;
+  background-color: $accent;
   padding-top: 10px;
-  border-top: 3px solid $accent;
   transform: translateY(0);
   opacity: 1;
   margin-top: 5px;
@@ -143,6 +141,6 @@
 
 .nav-options--full-screen {
   display: flex;
-  margin: 30px 0;
+  margin: 50px 0;
   flex-direction: column;
 }
