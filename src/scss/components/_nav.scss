@@ -117,12 +117,18 @@
 
 .nav-container {
   opacity: 0;
-  transition: transform 0.4s $slight-snap-timing, opacity 0.3s;
   transform: translateY(400px);
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: transform 0.4s $slight-snap-timing, opacity 0.3s;
+  }
 
   @media #{$large-breakpoint} {
     transform: translateY(0) translateX(30vw);
-    transition: transform 0.4s $slight-snap-timing;
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: transform 0.4s $slight-snap-timing;
+    }
   }
 }
 
