@@ -204,6 +204,12 @@
   &--full-screen {
     margin: 8vh 0;
 
+    @media (orientation: landscape) and (max-height: 400px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: min-content;
+    }
+
     .main-nav__link {
       display: flex;
     }
