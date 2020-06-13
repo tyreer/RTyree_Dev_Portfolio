@@ -2,39 +2,35 @@
 // Shared component rules
 // —————————————————————————————————————————————————————————————————————
 
-// Container for all pink background content areas
 .body-text-container {
   @extend %common-font-color;
-  text-align: left;
   padding: 25px 0;
   box-shadow: $box-shadow--container;
 }
 
-.title-container__div,
 .resume {
   transform: rotate(-10deg);
 }
 
-// All title containers
-.title-container {
-  @extend %flex-column;
-  align-items: center;
-  margin: 20px 0px;
-}
-
-// All circular title containers
-.title-container__div,
-.title-container__div--intro {
-  @extend %flex-column;
+.section-header {
   @extend %common-font-color;
-  justify-content: center;
-  text-align: center;
-  width: 260px;
-  height: 260px;
-  @include circle-border(8px);
-  box-shadow: $box-shadow--title;
-  @media #{$medium-breakpoint} {
-    width: 350px;
-    height: 350px;
+  padding: 50px 15px 20px;
+
+  @media #{$large-breakpoint} {
+    padding: 90px 20px 75px;
+  }
+
+  &__text {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    font-family: $font-family--serif;
+
+    @media #{$large-breakpoint} {
+      display: inline;
+      text-align: left;
+      font-size: 200px;
+      letter-spacing: -6px;
+    }
   }
 }
