@@ -2,6 +2,18 @@
 // About component rules
 // —————————————————————————————————————————————————————————————————————
 
+.about {
+  position: relative;
+
+  &__wave {
+    position: absolute;
+    top: 0;
+    path {
+      fill: $primary-bg;
+    }
+  }
+}
+
 .about__headline {
   text-align: center;
 }
