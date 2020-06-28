@@ -4,30 +4,52 @@
 
 .about {
   position: relative;
+  @extend %common-font-color;
+  padding-bottom: 40px;
 
   &__wave {
     position: absolute;
-    top: 0;
+    top: -71px;
+
     path {
       fill: $primary-bg;
     }
   }
-}
 
-.about__skillsHeader {
-  text-decoration: underline;
-}
+  &__skills-header {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 16px;
+    margin-bottom: 10px;
 
-.resume {
-  @extend %flex-column;
-  @include circle-border(4px);
-  justify-content: center;
-  width: 120px;
-  height: 120px;
-  margin: auto;
-}
+    &:first-of-type {
+      margin-top: 20px;
+    }
+  }
 
-.resume:hover {
-  background: white;
-  color: $primary-bg;
+  &__skills-list {
+    margin-bottom: 25px;
+    text-align: center;
+    li {
+      font-size: 16px;
+    }
+  }
+
+  &__resume {
+    @extend %flex-column;
+    @include circle-border(2px);
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+
+    @media #{$large-breakpoint} {
+      & :hover {
+        background: white;
+        color: $primary-bg;
+      }
+    }
+  }
 }
