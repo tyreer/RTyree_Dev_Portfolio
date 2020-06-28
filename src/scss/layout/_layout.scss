@@ -2,16 +2,6 @@
 // Layout rules
 // —————————————————————————————————————————————————————————————————————
 
-.body-padding {
-  padding: 0 50px;
-  @media #{$medium-breakpoint} {
-    width: 50%;
-    margin: auto;
-    border-left: 7px white solid;
-    border-right: 7px white solid;
-  }
-}
-
 /*Allows links within page to arrive at desired positioning */
 #about,
 #work-samples,
