@@ -2,35 +2,47 @@
 // Shared component rules
 // —————————————————————————————————————————————————————————————————————
 
-.body-text-container {
-  @extend %common-font-color;
-  padding: 25px 0;
-  box-shadow: $box-shadow--container;
-}
-
-.resume {
-  transform: rotate(-10deg);
-}
-
 .section-header {
   @extend %common-font-color;
-  padding: 50px 15px 20px;
+  padding: 20px 25px 15px;
 
   @media #{$large-breakpoint} {
     padding: 90px 20px 75px;
   }
 
   &__text {
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    font-family: $font-family--serif;
+    font-size: 28px;
+    font-family: $font-family--sans-serif;
 
     @media #{$large-breakpoint} {
       display: inline;
       text-align: left;
       font-size: 200px;
       letter-spacing: -6px;
+    }
+  }
+}
+
+.resume {
+  transform: rotate(-10deg);
+}
+
+.section-body {
+  @extend %common-font-color;
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 10px;
+  }
+
+  &__container {
+    padding: 0 25px;
+    @media #{$medium-breakpoint} {
+      width: 50%;
+      margin: auto;
+      border-left: 7px white solid;
+      border-right: 7px white solid;
     }
   }
 }
