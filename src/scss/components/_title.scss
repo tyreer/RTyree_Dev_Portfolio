@@ -3,7 +3,7 @@
   margin-top: 25vh;
 
   @media #{$large-breakpoint} {
-    height: 60vh;
+    height: 40vh;
   }
 
   &__text-container {
@@ -30,7 +30,7 @@
 
   &__text {
     display: flex;
-    font-size: 30px;
+    font-size: 32px;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
