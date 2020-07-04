@@ -9,7 +9,6 @@
   &__skills-header {
     text-align: center;
     text-decoration: underline;
-    font-size: 16px;
     margin-bottom: 10px;
 
     &:first-of-type {
@@ -20,9 +19,6 @@
   &__skills-list {
     margin-bottom: 25px;
     text-align: center;
-    li {
-      font-size: 16px;
-    }
   }
 
   &__resume {
@@ -32,7 +28,6 @@
     width: 40px;
     height: 40px;
     margin: auto;
-    font-size: 16px;
     text-align: center;
 
     @media #{$large-breakpoint} {

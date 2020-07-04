@@ -2,6 +2,10 @@
   height: 70vh;
   margin-top: 25vh;
 
+  @media #{$large-breakpoint} {
+    height: 60vh;
+  }
+
   &__text-container {
     text-transform: uppercase;
     height: 210px;
@@ -26,6 +30,7 @@
 
   &__text {
     display: flex;
+    font-size: 30px;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
