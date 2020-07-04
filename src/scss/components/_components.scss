@@ -39,3 +39,15 @@
     }
   }
 }
+
+.wave {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+  &__svg {
+    width: 102vw;
+    display: block;
+    fill: $primary-bg;
+  }
+}
