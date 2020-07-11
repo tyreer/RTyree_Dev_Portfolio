@@ -2,8 +2,8 @@
   height: 70vh;
   margin-top: 25vh;
 
-  @media #{$large-breakpoint} {
-    height: 40vh;
+  @media (max-width: 700px) and (orientation: landscape) {
+    height: 95vh;
   }
 
   &__text-container {
