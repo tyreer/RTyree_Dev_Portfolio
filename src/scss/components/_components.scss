@@ -48,16 +48,15 @@
 }
 
 .wave {
+  display: block;
   position: absolute;
   top: -$wave-height;
-
-  &__container {
-    width: 100vw;
-    overflow: hidden;
-    text-align: center;
-  }
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
 
   &__svg {
+    display: block;
     width: $wave-width;
     fill: $primary-bg;
   }
