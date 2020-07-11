@@ -48,20 +48,17 @@
 }
 
 .wave {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  margin-bottom: -5px;
+  position: absolute;
+  top: -$wave-height;
+
+  &__container {
+    width: 100vw;
+    overflow: hidden;
+    text-align: center;
+  }
 
   &__svg {
-    display: block;
-    width: 103vw;
+    width: $wave-width;
     fill: $primary-bg;
-
-    @media #{$medium-breakpoint} {
-      position: relative;
-      bottom: -10vw;
-    }
   }
 }
