@@ -1,0 +1,33 @@
+.work {
+  padding: 40px 0;
+
+  &__subheader {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+    border-bottom: 2px solid;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+  }
+
+  &__highlight {
+    font-size: 28px;
+    font-family: serif;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    border-bottom: 3px solid $accent;
+    display: inline-block;
+  }
+
+  &__list {
+    margin-left: 20px;
+  }
+
+  &__list-item {
+    margin-bottom: 17px;
+  }
+}

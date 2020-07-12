@@ -4,9 +4,6 @@
 
 .about {
   @extend %common-font-color;
-  a {
-    color: $white;
-  }
   position: relative;
   padding: 40px 0;
 
