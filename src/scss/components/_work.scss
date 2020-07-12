@@ -1,6 +1,15 @@
 .work {
   padding: 40px 0;
 
+  @media #{$medium-breakpoint} {
+    padding: 100px 0;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+
   &__subheader {
     display: inline-block;
     font-size: 14px;
@@ -25,6 +34,10 @@
 
   &__list {
     margin-left: 20px;
+
+    @media #{$medium-breakpoint} {
+      margin-left: 40px;
+    }
   }
 
   &__list-item {

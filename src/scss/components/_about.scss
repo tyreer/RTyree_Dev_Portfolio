@@ -7,6 +7,10 @@
   position: relative;
   padding: 40px 0;
 
+  @media #{$medium-breakpoint} {
+    padding: 60px 0;
+  }
+
   &__skills-header {
     text-align: center;
     text-decoration: underline;
