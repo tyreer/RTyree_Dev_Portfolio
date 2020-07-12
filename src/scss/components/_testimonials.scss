@@ -1,3 +1,13 @@
+.testimonials {
+  @extend %common-font-color;
+  position: relative;
+  padding: 40px 0;
+
+  @media #{$medium-breakpoint} {
+    padding: 60px 0;
+  }
+}
+
 .testimonial-name {
   font-weight: bold;
 }
