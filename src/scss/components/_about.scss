@@ -3,9 +3,12 @@
 // —————————————————————————————————————————————————————————————————————
 
 .about {
+  @extend %common-font-color;
+  a {
+    color: $white;
+  }
   position: relative;
   padding: 40px 0;
-  @extend %common-font-color;
 
   &__skills-header {
     text-align: center;
