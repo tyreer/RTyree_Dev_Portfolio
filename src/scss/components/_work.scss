@@ -1,6 +1,10 @@
 .work {
   padding: 40px 0;
 
+  h2 {
+    margin-bottom: 20px;
+  }
+
   @media #{$medium-breakpoint} {
     padding: 100px 0;
 
