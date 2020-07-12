@@ -35,6 +35,10 @@
   &__list {
     margin-left: 20px;
 
+    &:first-of-type {
+      margin-bottom: 60px;
+    }
+
     @media #{$medium-breakpoint} {
       margin-left: 40px;
     }
