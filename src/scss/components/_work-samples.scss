@@ -1,5 +1,34 @@
-.work-sample {
-  text-align: center;
+.work-samples {
+  a {
+    color: $primary-bg;
+    border-bottom: 3px solid #eb586f;
+    padding-bottom: 2px;
+    display: inline-block;
+  }
+
+  li {
+    margin-bottom: 17px;
+  }
+
+  h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid;
+    padding-bottom: 2px;
+    display: inline-block;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+
+    p {
+      margin-bottom: 30px;
+      font-size: 28px;
+      font-family: serif;
+    }
+  }
+
+  margin-bottom: 400px;
 }
 
 .work-sample__h2 {
