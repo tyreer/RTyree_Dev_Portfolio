@@ -1,12 +1,12 @@
 .work {
-  padding: 40px 0;
+  padding: 40px 0 calc(40px + 5vw);
 
   h2 {
     margin-bottom: 20px;
   }
 
   @media #{$medium-breakpoint} {
-    padding: 100px 0;
+    padding: 100px 0 calc(100px + 5vw);
 
     h2 {
       text-align: center;
