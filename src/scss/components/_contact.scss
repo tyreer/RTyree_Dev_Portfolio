@@ -1,53 +1,54 @@
-// —————————————————————————————————————————————————————————————————————
-// Contact component rules
-// —————————————————————————————————————————————————————————————————————
-
-.title-container__div--contact {
+.contact {
+  @extend %common-font-color;
+  position: relative;
+  padding: 20px 0 40px;
+  border-top: 5px white solid;
   text-align: center;
-  padding: 10%;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
   @media #{$medium-breakpoint} {
-    padding: 30px 0;
+    padding: 60px 0;
   }
-}
 
-.profile-image {
-  width: 55%;
-  height: 55%;
-  @include circle-border(7px);
-  @media #{$medium-breakpoint} {
-    width: 250px;
-    height: 250px;
+  &__image {
+    width: 40%;
+    height: 40%;
+    @include circle-border(4px);
+    margin-bottom: 25px;
+    @media #{$medium-breakpoint} {
+      width: 200px;
+      height: 200px;
+    }
   }
-}
 
-.title-container--contact {
-  background-color: $primary-bg;
-  border-top: 7px white solid;
-  border-bottom: 7px white solid;
-}
+  &__icon-container {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    font-size: 20px;
 
-.contact-icon-container {
-  width: 40%;
-  display: flex;
-  justify-content: space-around;
-  margin: auto;
-  font-size: 1.3em;
-  @media #{$large-breakpoint} {
-    font-size: 1.6em;
+    @media #{$large-breakpoint} {
+      font-size: 24px;
+    }
+
+    a {
+      padding: 5%;
+      margin: 5%;
+
+      border-radius: 50%;
+      @media #{$large-breakpoint} {
+        padding: 15px;
+        margin: 25px 10px;
+      }
+
+      &:hover {
+        background: white;
+        color: $primary-bg;
+      }
+    }
   }
-}
-
-.contact-icon-container a {
-  padding: 5%;
-  margin: 5%;
-  @include circle-border(3px);
-  @media #{$large-breakpoint} {
-    padding: 25px;
-    margin: 25px 10px;
-  }
-}
-
-.contact-icon-container a:hover {
-  background: white;
-  color: $primary-bg;
 }
