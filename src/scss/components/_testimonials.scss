@@ -23,14 +23,17 @@
     }
   }
 
-  &__name {
-    font-weight: bold;
-    display: inline-block;
-    border-bottom: 1px dotted $accent;
-    margin-bottom: 6px;
+  &__link {
+    border-bottom: 2px solid $accent;
 
-    &:hover {
-      border-bottom-style: solid;
+    &--name {
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+
+    &--dashed {
+      border-bottom: 2px dashed $accent;
     }
   }
 

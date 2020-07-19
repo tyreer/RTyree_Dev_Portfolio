@@ -1,5 +1,7 @@
 .work {
   padding: 40px 0 calc(40px + 5vw);
+  position: relative;
+  z-index: 1;
 
   h2 {
     margin-bottom: 20px;
