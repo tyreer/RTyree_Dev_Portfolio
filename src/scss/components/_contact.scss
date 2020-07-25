@@ -49,11 +49,11 @@
         height: 70px;
         width: 70px;
         margin: 25px 10px;
-      }
 
-      &:hover {
-        background: white;
-        color: $primary-bg;
+        &:hover {
+          background: white;
+          color: $primary-bg;
+        }
       }
     }
   }
