@@ -1,15 +1,50 @@
-.testimonial-name {
-  font-weight: bold;
-}
+.testimonials {
+  @extend %common-font-color;
+  position: relative;
+  padding: 40px 0;
 
-.testimonial-name:hover {
-  text-decoration: underline;
-}
+  @media #{$medium-breakpoint} {
+    padding: 60px 0;
+  }
 
-.testimonial-title {
-  font-style: italic;
-}
+  h2 {
+    margin-bottom: 25px;
+  }
 
-.body-padder--bottom-margin {
-  margin-bottom: 45px;
+  &__quote {
+    margin-bottom: 50px;
+
+    p {
+      line-height: 1.3;
+    }
+
+    footer {
+      margin-top: 15px;
+    }
+  }
+
+  &__link {
+    border-bottom: 2px solid $accent;
+
+    &--name {
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+
+    &--dashed {
+      border-bottom: 2px dashed $accent;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.3;
+
+    @media #{$medium-breakpoint} {
+      font-size: 14px;
+    }
+  }
 }

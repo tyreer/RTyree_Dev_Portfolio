@@ -1,0 +1,41 @@
+.title {
+  height: 70vh;
+  margin-top: 25vh;
+
+  @media (max-width: 700px) and (orientation: landscape) {
+    height: 95vh;
+  }
+
+  &__text-container {
+    text-transform: uppercase;
+    height: 210px;
+    width: 250px;
+    margin: auto;
+    border: 2px solid;
+    padding: 25px 0 40px;
+
+    @media #{$large-breakpoint} {
+      &:hover {
+        background-color: $primary-bg;
+        cursor: crosshair;
+        color: $white;
+        font-style: italic;
+
+        @media (prefers-reduced-motion: no-preference) {
+          animation: headerBob 0.5s linear infinite;
+        }
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    font-size: 32px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+  }
+}

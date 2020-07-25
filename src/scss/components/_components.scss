@@ -2,39 +2,62 @@
 // Shared component rules
 // —————————————————————————————————————————————————————————————————————
 
-// Container for all pink background content areas
-.body-text-container {
-  @extend %common-font-color;
-  text-align: left;
-  padding: 25px 0;
-  box-shadow: $box-shadow--container;
-}
-
-.title-container__div,
-.resume {
-  transform: rotate(-10deg);
-}
-
-// All title containers
-.title-container {
-  @extend %flex-column;
-  align-items: center;
-  margin: 20px 0px;
-}
-
-// All circular title containers
-.title-container__div,
-.title-container__div--intro {
-  @extend %flex-column;
-  @extend %common-font-color;
-  justify-content: center;
-  text-align: center;
-  width: 260px;
-  height: 260px;
-  @include circle-border(8px);
-  box-shadow: $box-shadow--title;
+.section-container {
   @media #{$medium-breakpoint} {
-    width: 350px;
-    height: 350px;
+    width: 600px;
+    margin: auto;
+
+    &--two-col {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+    }
+  }
+}
+
+.section-header {
+  padding: 20px 25px 15px;
+
+  @media #{$medium-breakpoint} {
+    padding: 0 20px 15px;
+  }
+
+  &__text {
+    font-size: 40px;
+    font-family: $font-family--serif;
+    letter-spacing: -1px;
+
+    @media #{$large-breakpoint} {
+      display: inline;
+      text-align: left;
+    }
+  }
+}
+
+.section-body {
+  font-size: 16px;
+  @media #{$medium-breakpoint} {
+    font-size: 18px;
+  }
+
+  &__text {
+    line-height: 1.5;
+    margin: 0 0 10px;
+  }
+
+  &__container {
+    padding: 0 25px;
+  }
+}
+
+.wave {
+  position: absolute;
+  top: -$wave-height;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+
+  &__svg {
+    width: $wave-width;
+    fill: $primary-bg;
   }
 }
