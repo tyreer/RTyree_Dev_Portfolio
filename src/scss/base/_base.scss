@@ -4,36 +4,21 @@
 
 body {
   background-color: white;
+  color: $black;
 }
 
-h2 {
-  font-size: 1.8em;
-  @media #{$medium-breakpoint} {
-    font-size: 2.26em;
-  }
-}
-
+h1,
+h2,
 h3,
-.text-3 {
-  font-size: 1.5em;
-  @media #{$medium-breakpoint} {
-    font-size: 2em;
-  }
-}
-
-h4 {
-  font-size: 1.3em;
-  @media #{$medium-breakpoint} {
-    font-size: 1.6em;
-  }
-}
-
+h4,
+h5,
+h6,
 p,
-li {
-  font-size: 1.1em;
-  @media #{$medium-breakpoint} {
-    font-size: 1.5em;
-  }
+blockquote {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: inherit;
 }
 
 ul {
@@ -42,13 +27,12 @@ ul {
 }
 
 li {
-  list-style: none;
   line-height: 1.4em;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
 
 input,
@@ -60,8 +44,8 @@ a {
 }
 
 section {
-  position: relative;
-  z-index: 1;
+  // position: relative;
+  // z-index: 1;
 }
 
 /// —————————————————————————————————————————————————————————————————————
@@ -78,7 +62,7 @@ section {
   overflow: hidden;
 }
 
-#nav-bars,
+#nav-button,
 a {
   cursor: crosshair;
 }
