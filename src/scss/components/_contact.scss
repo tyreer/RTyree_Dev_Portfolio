@@ -25,7 +25,7 @@
   }
 
   &__icon-container {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-around;
     margin: auto;
@@ -38,16 +38,43 @@
     a {
       padding: 5%;
       margin: 5%;
-
+      color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border-radius: 50%;
+
       @media #{$large-breakpoint} {
-        padding: 15px;
+        padding: 0;
+        height: 70px;
+        width: 70px;
         margin: 25px 10px;
       }
 
       &:hover {
         background: white;
         color: $primary-bg;
+      }
+    }
+  }
+
+  &__icon {
+    height: 30px;
+    width: 30px;
+    fill: currentColor;
+
+    @media #{$medium-breakpoint} {
+      height: 40px;
+      width: 40px;
+    }
+
+    &--linked-in {
+      height: 35px;
+      width: 35px;
+
+      @media #{$medium-breakpoint} {
+        height: 45px;
+        width: 45px;
       }
     }
   }
