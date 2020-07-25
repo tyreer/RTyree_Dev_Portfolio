@@ -1,5 +1,5 @@
-Front end web developer portfolio of Robert Tyree
+# Web developer portfolio of Robert Tyree
 
 [tyreer.com](https://tyreer.com)
 
-![Robert Tyree Developer Portfolio Preview Image](https://github.com/tyreer/RTyree_Dev_Portfolio/blob/master/src/img/social-media-img.png)
+![Robert Tyree Developer Portfolio Preview Image](https://raw.githubusercontent.com/tyreer/RTyree_Dev_Portfolio/master/src/img/social-preview-1_91-1.jpg)
