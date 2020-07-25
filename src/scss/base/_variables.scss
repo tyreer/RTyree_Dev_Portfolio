@@ -9,18 +9,8 @@ $box-shadow--title: -5px 8px 6px -6px grey;
 // Font families
 // —————————————————————————————————————————————————————————————————————
 
-$font-url--google: "https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Muli&display=swap";
-@import url($font-url--google);
-
-$font-family--sans-serif: "Muli", Helvetica, Arial, sans-serif;
+$font-family--sans-serif: "Mulish", Helvetica, Arial, sans-serif;
 $font-family--serif: "Fanwood Text", fantasy;
-
-// @import url(https://rsms.me/inter/inter.css);
-// $font-family--alt-san-serif: "Inter", Helvetica, Arial, sans-serif;
-
-// @supports (font-variation-settings: normal) {
-//   $font-family--alt-san-serif: "Inter var", Helvetica, Arial, sans-serif;
-// }
 
 // —————————————————————————————————————————————————————————————————————
 // Base colors
