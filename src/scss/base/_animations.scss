@@ -9,80 +9,14 @@ $slight-snap-timing-2: cubic-bezier(0.53, 0.01, 0.36, 1.63);
   top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .profile-image:hover {
-    animation: fullSpin 6s linear infinite;
-  }
-}
-
 @keyframes headerBob {
   25% {
-    transform: rotate(5deg) translateY(0);
+    transform: rotate(5deg);
   }
   75% {
-    transform: rotate(-5deg) translateY(0);
+    transform: rotate(-5deg);
   }
   100% {
-    transform: rotate(0deg) translateY(0);
-  }
-}
-
-@keyframes bodyBob {
-  0% {
-    transform: rotate(-10deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  100% {
-    transform: rotate(-10deg);
-  }
-}
-
-@keyframes fullSpin {
-  0% {
     transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-// Background
-
-.title__bracket {
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  right: 50%;
-  transition: transform 0.5s $slight-snap-timing;
-  font-size: 19px;
-
-  &--left {
-    transform: translateX(-8px);
-  }
-
-  &--right {
-    transform: translateX(8px);
-  }
-
-  &--initial-left {
-    transform: translateX(-125px);
-  }
-
-  &--initial-right {
-    transform: translateX(125px);
-  }
-
-  &--fast {
-    transition: transform 0.25s $slight-snap-timing-2;
-  }
-
-  &--wide-left {
-    transform: translateX(-12px) scale(1.1);
-  }
-
-  &--wide-right {
-    transform: translateX(12px) scale(1.1);
   }
 }

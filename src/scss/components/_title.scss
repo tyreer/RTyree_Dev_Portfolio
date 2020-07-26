@@ -39,4 +39,41 @@
     line-height: 34px;
     letter-spacing: -0.5px;
   }
+
+  &__bracket {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    right: 50%;
+    transition: transform 0.5s $slight-snap-timing;
+    font-size: 19px;
+
+    &--left {
+      transform: translateX(-8px);
+    }
+
+    &--right {
+      transform: translateX(8px);
+    }
+
+    &--initial-left {
+      transform: translateX(-125px);
+    }
+
+    &--initial-right {
+      transform: translateX(125px);
+    }
+
+    &--fast {
+      transition: transform 0.25s $slight-snap-timing-2;
+    }
+
+    &--wide-left {
+      transform: translateX(-12px) scale(1.1);
+    }
+
+    &--wide-right {
+      transform: translateX(12px) scale(1.1);
+    }
+  }
 }
