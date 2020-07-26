@@ -1,23 +1,21 @@
 let intersectionCount = 0;
-const bgDivs = document.getElementsByClassName("div-bg");
-const title = document.getElementsByClassName("title-container--initial")[0];
+const titleBrackets = document.getElementsByClassName("title__bracket");
 
-const topCallback = () => {
+function topCallback() {
   if (intersectionCount === 0) {
-    bgDivs[0].classList.remove("div-bg--initial-left");
-    bgDivs[1].classList.remove("div-bg--initial-right");
-    title.classList.remove("title-container--initial");
+    titleBrackets[0].classList.remove("title__bracket--initial-left");
+    titleBrackets[1].classList.remove("title__bracket--initial-right");
   } else if (intersectionCount % 2 !== 0) {
-    bgDivs[0].classList.add("div-bg--wide-left", "div-bg--fast");
-    bgDivs[1].classList.add("div-bg--wide-right", "div-bg--fast");
+    titleBrackets[0].classList.add("title__bracket--wide-left", "title__bracket--fast");
+    titleBrackets[1].classList.add("title__bracket--wide-right", "title__bracket--fast");
   } else {
-    bgDivs[0].classList.remove("div-bg--wide-left");
-    bgDivs[1].classList.remove("div-bg--wide-right");
+    titleBrackets[0].classList.remove("title__bracket--wide-left");
+    titleBrackets[1].classList.remove("title__bracket--wide-right");
   }
 
   intersectionCount += 1;
-};
+}
 
-const topOfPage = document.getElementById("top");
+const topOfPage = document.getElementById("top-intersection");
 const observer = new IntersectionObserver(topCallback);
 observer.observe(topOfPage);

@@ -4,6 +4,11 @@
 $slight-snap-timing: cubic-bezier(0.53, 0.01, 0.36, 1.1);
 $slight-snap-timing-2: cubic-bezier(0.53, 0.01, 0.36, 1.63);
 
+#top-intersection {
+  position: absolute;
+  top: 0;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .profile-image:hover {
     animation: fullSpin 6s linear infinite;
@@ -45,42 +50,28 @@ $slight-snap-timing-2: cubic-bezier(0.53, 0.01, 0.36, 1.63);
 
 // Background
 
-.div-bg {
-  position: fixed;
+.title__bracket {
+  position: absolute;
+  bottom: -40px;
   left: 50%;
-  transform: translateX(-50%) rotate(-20deg);
-  box-shadow: 0 8px 10px -6px black;
-  width: 670px;
-  height: 50px;
-  background: #103ffb;
+  right: 50%;
   transition: transform 0.5s $slight-snap-timing;
+  font-size: 19px;
 
-  @media #{$medium-breakpoint} {
-    height: 80px;
+  &--left {
+    transform: translateX(-8px);
   }
 
-  &--top {
-    top: 205px;
-
-    @media #{$medium-breakpoint} {
-      top: 140px;
-    }
-  }
-
-  &--bottom {
-    top: 285px;
-
-    @media #{$medium-breakpoint} {
-      top: 275px;
-    }
+  &--right {
+    transform: translateX(8px);
   }
 
   &--initial-left {
-    transform: translateX(-200%) rotate(-20deg);
+    transform: translateX(-125px);
   }
 
   &--initial-right {
-    transform: translateX(200%) rotate(-20deg);
+    transform: translateX(125px);
   }
 
   &--fast {
@@ -88,10 +79,10 @@ $slight-snap-timing-2: cubic-bezier(0.53, 0.01, 0.36, 1.63);
   }
 
   &--wide-left {
-    transform: translateX(-55%) rotate(-20deg);
+    transform: translateX(-12px) scale(1.1);
   }
 
   &--wide-right {
-    transform: translateX(-45%) rotate(-20deg);
+    transform: translateX(12px) scale(1.1);
   }
 }
