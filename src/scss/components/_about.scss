@@ -11,33 +11,47 @@
     padding: 60px 0;
   }
 
-  &__skills-header {
+  &__skills-section {
     text-align: center;
-    text-decoration: underline;
-    margin-bottom: 10px;
+
+    &:first-of-type {
+      margin-top: 40px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
 
     @media #{$medium-breakpoint} {
       text-align: left;
-    }
 
-    &:first-of-type {
-      margin-top: 30px;
+      &:last-of-type {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &__skills-header {
+    margin-bottom: 10px;
+    padding-bottom: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    display: inline-block;
+
+    @media #{$medium-breakpoint} {
+      text-transform: none;
+      font-weight: normal;
     }
   }
 
   &__skills-list {
     list-style: none;
-    text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 
     @media #{$medium-breakpoint} {
       list-style: circle;
-      text-align: left;
       margin-left: 30px;
-
-      &:last-of-type {
-        margin-bottom: 50px;
-      }
     }
   }
 
