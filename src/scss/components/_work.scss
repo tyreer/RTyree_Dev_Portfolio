@@ -1,5 +1,5 @@
 .work {
-  padding: 40px 0 calc(40px + 5vw);
+  padding: 50px 0 calc(50px + 5vw);
   position: relative;
   z-index: 1;
 
@@ -8,11 +8,11 @@
   }
 
   @media #{$medium-breakpoint} {
-    padding: 100px 0 calc(100px + 5vw);
+    padding: 120px 0 calc(100px + 5vw);
 
     h2 {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
   }
 
@@ -42,7 +42,7 @@
     margin-left: 20px;
 
     &:first-of-type {
-      margin-bottom: 60px;
+      margin-bottom: 70px;
     }
 
     @media #{$medium-breakpoint} {
