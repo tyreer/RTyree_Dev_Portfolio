@@ -13,7 +13,10 @@
 A simple portfolio site made with:
 
 - Plain, static HTML
-- Small ES module to toggle classes for the navigation
-- Small ES module for scrolling animation via standard [intersection observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+- A small ES module to toggle classes for the navigation
+- A small ES module for scrolling animation via native [intersection observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 - Sass for styles
 - Webpack for Babel and Sass build steps
+- Small Node utility for generating WebP images via `imagemin-webp`
+- [Material Design](https://material.io/resources/icons/?style=baseline) / [Material UI](https://material-ui.com/components/material-icons/) SVG assets for nav + social media icons
+- Wave SVGs from https://getwaves.io/
