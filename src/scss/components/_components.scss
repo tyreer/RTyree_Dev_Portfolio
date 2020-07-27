@@ -25,11 +25,6 @@
     font-size: 40px;
     font-family: $font-family--serif;
     letter-spacing: -1px;
-
-    @media #{$large-breakpoint} {
-      display: inline;
-      text-align: left;
-    }
   }
 }
 
