@@ -3,14 +3,14 @@
   position: relative;
   z-index: 1;
 
-  h2 {
+  .section-header__text {
     margin-bottom: 20px;
   }
 
   @media #{$medium-breakpoint} {
     padding: 120px 0 calc(100px + 5vw);
 
-    h2 {
+    .section-header__text {
       text-align: center;
       margin-bottom: 50px;
     }
