@@ -5,6 +5,10 @@
 $box-shadow--container: 0 8px 10px -6px grey;
 $box-shadow--title: -5px 8px 6px -6px grey;
 
+// Dimensions for wave SVGs based on 4.5 : 1 view box ratio
+$wave-width: 103vw;
+$wave-height: 22vw;
+
 // —————————————————————————————————————————————————————————————————————
 // Font families
 // —————————————————————————————————————————————————————————————————————
@@ -16,19 +20,11 @@ $font-family--serif: "Fanwood Text", fantasy;
 // Base colors
 // —————————————————————————————————————————————————————————————————————
 
-$white: rgb(255, 255, 255);
+$white: #fff;
 $black: #000;
 $white--opacity: rgba(255, 255, 255, 0.98);
-// $primary-bg: #f9f9f9;
-// $primary-bg: #454553;
-// https://colorhunt.co/palette/1649
 $primary-bg: #1e2022;
-//https://colorhunt.co/palette/3460
 $accent: #eb586f;
-
-// $accent: #d63447;
-$accent-2: #625757;
-$accent-3: #454553;
 
 // —————————————————————————————————————————————————————————————————————
 // Media query breakpoints
@@ -36,11 +32,3 @@ $accent-3: #454553;
 
 $medium-breakpoint: "(min-width: 600px)";
 $large-breakpoint: "(min-width: 900px)";
-
-// —————————————————————————————————————————————————————————————————————
-// Media query breakpoints
-// —————————————————————————————————————————————————————————————————————
-
-// Based on 4.5 : 1 view box ratio
-$wave-width: 103vw;
-$wave-height: 22vw;
