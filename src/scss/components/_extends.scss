@@ -2,11 +2,6 @@
 // Component placeholders
 // —————————————————————————————————————————————————————————————————————
 
-%flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
 %common-font-color {
   font-family: $font-family--sans-serif;
   background-color: $primary-dark;
