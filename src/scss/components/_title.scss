@@ -17,7 +17,7 @@
 
     @media #{$large-breakpoint} {
       &:hover {
-        background-color: $primary-bg;
+        background-color: $primary-dark;
         cursor: crosshair;
         color: $white;
         font-style: italic;
