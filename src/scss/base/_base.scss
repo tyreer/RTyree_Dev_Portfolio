@@ -3,7 +3,7 @@
 // —————————————————————————————————————————————————————————————————————
 
 body {
-  background-color: white;
+  background-color: $white;
   color: $black;
 }
 
@@ -35,6 +35,11 @@ a {
   color: inherit;
 }
 
+#nav-button,
+a {
+  cursor: crosshair;
+}
+
 input,
 textarea,
 button,
@@ -43,38 +48,8 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-section {
-  // position: relative;
-  // z-index: 1;
-}
-
-/// —————————————————————————————————————————————————————————————————————
-// Utility classes
-/// —————————————————————————————————————————————————————————————————————
-
-.center {
-  text-align: center;
-}
-
-// Eliminate scroll option on desktop browsers when main-nav is full screen
+// Disable scroll when nav is full screen
 .disable-scroll {
   padding: 0;
   overflow: hidden;
-}
-
-#nav-button,
-a {
-  cursor: crosshair;
-}
-
-// Screen reader text
-.screen-reader-text {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
 }
