@@ -7,10 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js && cp ./src/CNAME dist/ ",
-    "deploy": "npm run build && npx gh-pages -d dist --message Deployment from deploy script",
+    "deploy-gh-pages": "npm run build && npx gh-pages -d dist --message Deployment from deploy script",
     "lint": "eslint \"src/**/*.js\"",
     "lint:fix": "eslint \"src/**/*.js\" --fix",
-    "prettier:fix": "prettier --write  \"src/**/*.scss\""
+    "prettier:fix": "prettier --write  \"src/**/*.scss\"",
+    "make-lighthouse-badges": "npx lighthouse-badges --urls https://www.tyreer.com --output-path src/img"
   },
   "repository": {
     "type": "git",
