@@ -1,8 +1,4 @@
-// —————————————————————————————————————————————————————————————————————
-// Nav component rules
-// —————————————————————————————————————————————————————————————————————
-
-.main-nav {
+.nav {
   display: flex;
   position: fixed;
   text-align: center;
@@ -18,7 +14,7 @@
   }
 
   &--collapsed {
-    .main-nav__icon--close {
+    .nav__icon--close {
       display: none;
     }
 
@@ -42,11 +38,11 @@
       border-top: 25px solid $white;
     }
 
-    .main-nav__icon--menu {
+    .nav__icon--menu {
       display: none;
     }
 
-    .main-nav__button {
+    .nav__button {
       transform: rotate(45deg);
       padding: 12.5px;
       border: none;
@@ -145,7 +141,7 @@
     transition: transform 0.4s $slight-snap-timing, opacity 0.3s;
   }
 
-  .main-nav__li {
+  .nav__li {
     @media #{$large-breakpoint} {
       transform: translateX(25px);
       opacity: 0;
@@ -191,7 +187,7 @@
   @media #{$large-breakpoint} {
     border-width: 6px;
 
-    .main-nav__li {
+    .nav__li {
       transform: translateX(0);
       opacity: 1;
     }
@@ -199,7 +195,7 @@
 }
 
 .nav-options {
-  &--collapsed .main-nav__link {
+  &--collapsed .nav__link {
     display: none;
   }
 
@@ -212,7 +208,7 @@
       grid-template-rows: min-content;
     }
 
-    .main-nav__link {
+    .nav__link {
       display: flex;
     }
   }
