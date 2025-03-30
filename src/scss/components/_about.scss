@@ -30,11 +30,6 @@
     padding-bottom: 1px;
     border-bottom: 2px solid;
     display: inline-block;
-
-    @media #{$medium-breakpoint} {
-      text-transform: none;
-      font-weight: normal;
-    }
   }
 
   &__skills-list {
