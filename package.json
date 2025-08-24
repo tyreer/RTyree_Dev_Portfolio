@@ -1,7 +1,7 @@
 {
   "name": "robert-tyree-portfolio",
   "version": "1.0.0",
-  "description": "Web developer portfolio for Robert Tyree",
+  "description": "Web engineer portfolio for Robert Tyree",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
