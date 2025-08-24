@@ -10,13 +10,29 @@
 
 ![Robert Tyree Developer Portfolio Preview Image](https://raw.githubusercontent.com/tyreer/RTyree_Dev_Portfolio/master/src/img/social-preview-1_91-1.jpg)
 
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
 A simple portfolio site made with:
 
 - Plain, static HTML
 - A small ES module to toggle classes for the navigation
 - A small ES module for scrolling animation via native [intersection observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 - Sass for styles
-- Webpack for Babel and Sass build steps
+- Vite for fast development and optimized builds
 - Small Node utility for generating WebP images via `imagemin-webp`
 - [Material Design](https://material.io/resources/icons/?style=baseline) / [Material UI](https://material-ui.com/components/material-icons/) SVG assets for nav + social media icons
 - Wave SVGs from https://getwaves.io/
