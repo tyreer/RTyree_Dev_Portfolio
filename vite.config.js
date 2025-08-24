@@ -10,7 +10,10 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        // Maintain existing SCSS configuration
+        // Suppress @import deprecation warnings - legacy SCSS syntax still works
+        // TODO: Migrate to @use syntax - see https://sass-lang.com/documentation/at-rules/use/
+        quietDeps: true,
+        silenceDeprecations: ['import']
       }
     }
   }
